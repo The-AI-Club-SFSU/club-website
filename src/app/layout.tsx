@@ -40,8 +40,8 @@ const open_sans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-    title: 'GDG on Campus Skyline College',
-    description: 'The official Google-affiliated Computer Science Organization at Skyline College. 🪁',
+    title: 'The AI Club @ SFSU 🤖',
+    description: 'The professional artificial intelligence community at San Francisco State University. 🪁',
 }
 
 export default function RootLayout({
