@@ -13,25 +13,13 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const TYPED_KEYWORDS = [
-    'Build Websites',
     'Design Projects',
-    'Pioneer Developers',
-    'Optimize Code',
-    'Compile Programs',
-    'Web Design',
-    'Gain Experience',
-    '$ yarn build',
+    'Pioneer Research',
+    'Develop Experience',
     'Grow Your Portfolio',
-    '3D-Model',
-    'Deploy',
     'Problem-Solve',
-    '$ npm install',
-    'Interpret',
     'Expand Your Network',
-    'Game Design',
     'Collaborate',
-    'Delegate',
-    '$ git commit'
 ]
 
 export function Hero(): React.ReactNode {
@@ -39,82 +27,91 @@ export function Hero(): React.ReactNode {
     const isInView = useInView(ref)
 
     return (
-        <div className='w-full h-screen bg-black'>
+        <div className='w-full h-screen'>
             {/* <Element name='hero' /> */}
 
-            <div className='absolute w-full h-full pointer-events-none overflow-hidden'>
-                <motion.div
-                    className='w-full h-full'
-                    initial={{ transform: 'translateY(10%)', opacity: '0%' }}
-                    animate={isInView ? { transform: 'translateY(0%)', opacity: '100%' } : { transform: 'translateY(10%)', opacity: '0%' }}
-                    transition={{ duration: 3, ease: 'backOut' }}
-                    ref={ref}
-                >
+            {/* the hero backdrop */}
+            <motion.div
+                className='absolute pointer-events-none w-full h-full'
+                initial={{ transform: 'translateY(10%)', opacity: '0%' }}
+                animate={isInView ? { transform: 'translateY(0%)', opacity: '100%' } : { transform: 'translateY(10%)', opacity: '0%' }}
+                transition={{ duration: 3, ease: 'backOut' }}
+                ref={ref}
+            >
 
-                    {/* Actual backdrop image */}
-                    <Image
-                        width={1280}
-                        height={720}
-                        className='absolute w-full h-full blur-[0px] object-cover'
-                        src={'/assets/home/skyline_backdrop.jpg'}
-                        alt=''
-                        priority
-                    />
+                {/* Actual backdrop image */}
+                {/* <video
+                    width={1280}
+                    height={720}
+                    className='absolute w-full h-full object-cover'
+                    src={'/assets/home/backdrop.webm'}
+                    autoPlay
+                    playsInline
+                    muted
+                    loop
+                /> */}
+                {/* <Image
+                    width={1280}
+                    height={720}
+                    className='absolute w-full h-full blur-[0px] object-cover'
+                    src={'/assets/home/skyline_backdrop.jpg'}
+                    alt=''
+                    priority
+                /> */}
 
-                    {/* Hero .gif overlay */}
-                    <Image
-                        width={800}
-                        height={450}
-                        src={'/assets/home/hero_overlay.gif'}
-                        className='absolute top-0 w-full h-full drop-shadow-lg opacity-5 lg:opacity-10'
-                        alt=''
-                        unoptimized
-                        priority
-                    />
-
-                </motion.div>
-            </div>
-
-            <div className='absolute w-full h-full mx-auto flex flex-col items-center justify-center pb-24 gap-y-2'>
-                {/* mascot */}
+                {/* Hero .gif overlay */}
                 <Image
+                    width={800}
+                    height={450}
+                    src={'/assets/home/hero_overlay.gif'}
+                    className='absolute w-full h-full opacity-[3%] sm:opacity-5'
+                    alt=''
+                    priority
+                />
+
+            </motion.div>
+
+            {/* the hero content */}
+            <div className='z-10 absolute w-full h-full title-main text-center flex flex-col items-center justify-center pb-12 gap-y-2'>
+                {/* mascot */}
+                {/* <Image
                     width={80}
                     height={80}
                     src={'/assets/bits/mascot.gif'}
                     alt=''
                     unoptimized
                     className='z-20 hover:scale-105 transition-all duration-300 drop-shadow-[0_0_25px_rgba(255,255,255,0.4)]'
-                />
+                /> */}
 
                 {/* The main texts */}
-                <h1 className='z-20 title-main text-center text-shadow shadow-black font-bold text-white leading-tight'>
-                    <div className='text-[4.4vw] xl:text-[52px]'>The Artificial Intelligence Club</div>
-                    <div className='text-[3.2vw] xl:text-[36px] text-red-200'>@ San Francisco State University</div>
+                <h1 className='leading-tight'>
+                    <div className='text-[5.2vw] xl:text-[52px] font-bold'>The Artificial Intelligence Club</div>
+                    <div className='text-[4.2vw] xl:text-[36px] text-[#FCD690]'>@ San Francisco State University</div>
                 </h1>
 
-                <div className='z-20 title-main w-full text-white text-center text-shadow shadow-black text-[3.25vw] sm:text-xl'>
-                    <p className='group'>Elevate Your Code — the <span className='group-hover:text-red-300 group-hover:font-bold transition delay-100'>Sky&apos;s</span> <span className='group-hover:text-red-300 group-hover:font-bold transition delay-300'>the</span> <span className='group-hover:text-red-300 group-hover:font-bold transition delay-500'>Limit.</span></p>
-                    <h1 className='title-main font-bold text-2xl sm:pt-[4px]'>
-                        {'>'} We{' '}
+                <div className='text-[3.25vw] sm:text-xl'>
+                    <p className='group'>&apos;future slogan here&apos; — the <span className='group-hover:text-red-300 group-hover:font-bold transition delay-100'>sky&apos;s</span> <span className='group-hover:text-red-300 group-hover:font-bold transition delay-300'>the</span> <span className='group-hover:text-red-300 group-hover:font-bold transition delay-500'>limit.</span></p>
+                </div>
+
+                <h1 className='text-2xl'>
+                        {'<'} We{' '}
                         <ReactTyped
-                            className='text-[#FCD690] drop-shadow-[0_0_12px_rgba(245,210,140,210)]'
+                            className='font-bold text-[#b2fc90] drop-shadow-[0_0_4px_rgba(140,210,140,0.5)]'
                             strings={TYPED_KEYWORDS}
                             typeSpeed={50}
                             backSpeed={60}
                             backDelay={2000}
                             loop
                         />{' '}
-                        {'<'}
+                        {'>'}
                     </h1>
-                </div>
 
-                {/* Currently requires a weird arbit. offset of -180 for this particular scroll */}
                 <div
                     // to='about'
                     // smooth={true}
                     // offset={-140}
                     // duration={1500}
-                    className='z-20 mt-3 relative group w-[210px] hover:w-[240px] active:scale-95 duration-150 hover:border-green-900 border-white rounded-xl hover:outline hover:outline-[4px] active:outline-4 text-white text-lg title-main drop-shadow-[0_16px_20px_rgba(0,0,0,0.7)] overflow-hidden'
+                    className='relative group w-[210px] hover:w-[240px] active:scale-95 duration-150 hover:border-green-900 border-white rounded-xl hover:outline hover:outline-[4px] active:outline-4 text-white text-lg title-main drop-shadow-[0_16px_20px_rgba(0,0,0,0.7)] overflow-hidden'
                 >
                     <IoMdArrowRoundDown className='absolute w-full h-full group-hover:translate-y-0 -translate-y-[100%] duration-300 bg-gradient-to-t from-[#16a34aec] to-[#ffffff91] pointer-events-none' />
                     <button className='flex w-full h-full justify-center py-[6px] font-semibold text-center text-shadow-lg shadow-black hover:bg-green-600 bg-neutral-900 bg-opacity-50 duration-300 hover:border-green-300 overflow-hidden'>
