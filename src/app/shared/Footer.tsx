@@ -13,32 +13,32 @@ export function Footer() {
             <Socials/ >
 
             <div className='flex flex-row items-center justify-center gap-4 py-2 w-full'>
-                <Link href='https://skylinecollege.edu/' target='_blank'>
+                <Link href='https://www.sfsu.edu' target='_blank'>
                     <Image
-                        src={'/assets/bits/skyline_brand.png'}
-                        width={128}
+                        src={'/assets/bits/sfsu_wordmark.png'}
+                        width={256}
                         height={128}
                         alt=''
                     />
                 </Link>
-                <Link href='https://smccd.edu/' target='_blank'>
+                {/* <Link href='https://smccd.edu/' target='_blank'>
                     <Image
                         src={'/assets/bits/smccd_brand.png'}
                         width={256}
                         height={128}
                         alt=''
                     />
-                </Link>
+                </Link> */}
             </div>
 
             <div className='pt-4 pb-10'>
-                <Link href='https://github.com/Skyline-College-Computer-Science-Club/project.ClubWebsite' target='_blank'>
+                <Link href='https://github.com/The-AI-Club-SFSU/club-website' target='_blank'>
                     <p className='text-red-500 text-sm sm:text-lg'>
-                        Made with ☕ & 💞 by students, for students.
+                        Made with ☕ & ❤️‍🔥 by students, for students.
                     </p>
                 </Link>
                 <p className='text-neutral-500 text-sm sm:text-lg'>
-                    Copyright ©️ Skyline Computer Science Club 2022-2024
+                    Copyright ©️ The Artificial Intelligence Club @ SFSU 2022-2025
                 </p>
             </div>
         </footer>

@@ -50,7 +50,7 @@ export function About(): React.ReactNode {
                 <div className='w-[80%] lg:w-[35%] text-sm xl:text-base'>
                     <ReactTyped
                         className='title-main text-[4vw] md:text-3xl font-bold text-white'
-                        strings={['Our Community at Skyline College']}
+                        strings={['Our Community at SFSU']}
                         typeSpeed={50}
                         startWhenVisible
                     />
