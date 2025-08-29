@@ -125,10 +125,10 @@ export function Navbar(): React.ReactNode {
                         <p>Projects</p>
                     </Link>
 
-                    <Link href='/hackathon' className='py-1 px-3 hover:px-6 active:scale-90 flex bg-neutral-950/25 hover:bg-yellow-700/50 rounded-lg transition-all duration-300'>
+                    {/* <Link href='/hackathon' className='py-1 px-3 hover:px-6 active:scale-90 flex bg-neutral-950/25 hover:bg-yellow-700/50 rounded-lg transition-all duration-300'>
                         <HiOutlineRocketLaunch className='my-auto mr-2 text-yellow-300' />
                         <p>The Intercollegiate Hackathon</p>
-                    </Link>
+                    </Link> */}
 
                     <Link href='https://discord.com/invite/z5P9kccwRh' target='_blank' className='py-1 px-3 hover:px-6 active:scale-90 flex bg-neutral-950/25 hover:bg-pink-400/30 rounded-lg transition-all duration-300'>
                         <GoCodeOfConduct className='my-auto mr-2 text-pink-300'/>
