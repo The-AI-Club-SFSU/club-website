@@ -24,7 +24,7 @@ export default function Recruitment(): React.ReactNode {
 
             <div className='flex flex-col h-screen justify-center items-center gap-2 md:gap-4 pt-4 px-4 pb-10'>
                 <Image
-                    src={'/assets/bits/mascot.gif'}
+                    src={'/assets/bits/ai_club_logo.webp'}
                     width={100}
                     height={100}
                     alt=''

@@ -23,7 +23,7 @@ f
             <div className='w-full h-[110vh] absolute flex flex-col bottom-[12rem] justify-center items-center'>
 
                 <Image
-                    src={'/assets/bits/mascot.gif'}
+                    src={'/assets/bits/ai_club_logo.webp'}
                     width={100}
                     height={100}
                     alt=''

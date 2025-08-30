@@ -99,7 +99,7 @@ export function Navbar(): React.ReactNode {
                     <Image
                         width={48}
                         height={48}
-                        src={'/assets/bits/mascot.gif'}
+                        src={'/assets/bits/ai_club_logo.webp'}
                         alt=''
                         unoptimized
                     />

@@ -18,7 +18,7 @@ export function IntroFade(): React.ReactNode {
             className='z-30 w-full h-screen fixed flex flex-col items-center justify-center pointer-events-none bg-black'
         >
             <Image
-                src={'/assets/bits/mascot.gif'}
+                src={'/assets/bits/ai_club_logo.webp'}
                 className='opacity-90 animate-pulse'
                 alt=''
                 width={100}

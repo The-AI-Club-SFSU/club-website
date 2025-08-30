@@ -32,15 +32,14 @@ export function Hero(): React.ReactNode {
 
             {/* the hero backdrop */}
             <motion.div
-                className='absolute pointer-events-none w-full h-full'
+                className='-z-10 absolute w-full h-full'
                 initial={{ transform: 'translateY(10%)', opacity: '0%' }}
                 animate={isInView ? { transform: 'translateY(0%)', opacity: '100%' } : { transform: 'translateY(10%)', opacity: '0%' }}
                 transition={{ duration: 3, ease: 'backOut' }}
                 ref={ref}
             >
-
                 {/* Actual backdrop image */}
-                {/* <video
+                <video
                     width={1280}
                     height={720}
                     className='absolute w-full h-full object-cover'
@@ -49,7 +48,7 @@ export function Hero(): React.ReactNode {
                     playsInline
                     muted
                     loop
-                /> */}
+                />
                 {/* <Image
                     width={1280}
                     height={720}
@@ -64,20 +63,22 @@ export function Hero(): React.ReactNode {
                     width={800}
                     height={450}
                     src={'/assets/home/hero_overlay.gif'}
-                    className='absolute w-full h-full opacity-[3%] sm:opacity-5'
+                    className='absolute w-full h-full opacity-[4%]'
                     alt=''
                     priority
                 />
 
             </motion.div>
 
-            {/* the hero content */}
+
+
+            {/* the main hero content */}
             <div className='z-10 absolute w-full h-full title-main text-center flex flex-col items-center justify-center pb-12 gap-y-2'>
                 {/* mascot */}
                 {/* <Image
                     width={80}
                     height={80}
-                    src={'/assets/bits/mascot.gif'}
+                    src={'/assets/bits/ai_club_logo.webp'}
                     alt=''
                     unoptimized
                     className='z-20 hover:scale-105 transition-all duration-300 drop-shadow-[0_0_25px_rgba(255,255,255,0.4)]'
@@ -94,17 +95,17 @@ export function Hero(): React.ReactNode {
                 </div>
 
                 <h1 className='text-2xl'>
-                        {'<'} We{' '}
-                        <ReactTyped
-                            className='font-bold text-[#b2fc90] drop-shadow-[0_0_4px_rgba(140,210,140,0.5)]'
-                            strings={TYPED_KEYWORDS}
-                            typeSpeed={50}
-                            backSpeed={60}
-                            backDelay={2000}
-                            loop
-                        />{' '}
-                        {'>'}
-                    </h1>
+                    {'<'} We{' '}
+                    <ReactTyped
+                        className='font-bold text-[#b2fc90] drop-shadow-[0_0_4px_rgba(140,210,140,0.5)]'
+                        strings={TYPED_KEYWORDS}
+                        typeSpeed={50}
+                        backSpeed={60}
+                        backDelay={2000}
+                        loop
+                    />{' '}
+                    {'>'}
+                </h1>
 
                 <div
                     // to='about'

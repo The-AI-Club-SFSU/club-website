@@ -81,7 +81,7 @@ export function About(): React.ReactNode {
 
             <div className='flex flex-col pt-20'>
                 <Image
-                    src={'/assets/bits/mascot.gif'}
+                    src={'/assets/bits/ai_club_logo.webp'}
                     className='z-10 w-20 md:w-24 hover:!scale-110 transition duration-300 ease-out mx-auto mb-6'
                     alt=''
                     width={128}

@@ -25,7 +25,7 @@ export default function Promotion(): React.ReactNode {
                 <div className='w-full h-full flex flex-col mt-64 justify-center items-center'>
 
                     <Image
-                        src={'/assets/bits/mascot.gif'}
+                        src={'/assets/bits/ai_club_logo.webp'}
                         width={100}
                         height={100}
                         alt=''

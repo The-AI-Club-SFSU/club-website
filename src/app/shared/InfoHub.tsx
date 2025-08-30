@@ -36,9 +36,9 @@ export function InfoHub(): React.ReactNode {
                     <div>
                         <h1 className='title-main text-4xl inline-flex font-semibold'>
                             Our Member Meetings
-                            <span>
+                            {/* <span>
                                 <Image src='/assets/bits/kits/kitty_astro.png' height={32} width={32} className='ml-3 mt-1' alt='' />
-                            </span>
+                            </span> */}
                         </h1>
                         <h2 className='text-neutral-400'>In-person festivities, fun events, and student member meet-ups!</h2>
                         <div className='w-full h-[1px] bg-neutral-400 my-3' />
@@ -77,9 +77,9 @@ export function InfoHub(): React.ReactNode {
                 <div className='flex flex-col gap-7 w-full px-2 md:px-0 text-right'>
                     <div>
                         <h1 className='title-main text-4xl inline-flex font-semibold'>
-                            <span>
+                            {/* <span>
                                 <Image src='/assets/bits/kits/kitty_write.png' height={32} width={32} className='mr-3 mt-1' alt='' />
-                            </span>
+                            </span> */}
                             Site Announcement
                         </h1>
                         <h2 className='text-neutral-400'>Words for our student members~! and visitors too!</h2>
@@ -91,17 +91,17 @@ export function InfoHub(): React.ReactNode {
 
                     <div>
                         <h1 className='title-main text-4xl inline-flex font-semibold'>
-                            <span>
+                            {/* <span>
                                 <Image src='/assets/bits/kits/kitty_read.png' height={32} width={32} className='mr-3 mt-1' alt='' />
-                            </span>
+                            </span> */}
                             Member Information Hub
                         </h1>
                         <h2 className='text-neutral-400'>Good-to-know information for current and future student members~!</h2>
                         <div className='w-full h-[1px] bg-neutral-400 my-3' />
                         <div className='flex flex-row flex-wrap justify-end font-semibold gap-x-2 gap-y-2'>
                             <Link 
-                                href='https://docs.google.com/document/d/1zQNKe-yL5rwGuMRI5siLUNC_SKyXT70c4yooRSxzPZ8/edit?usp=sharing' 
-                                target='_blank' 
+                                href='https://docs.google.com/document/d/1zQNKe-yL5rwGuMRI5siLUNC_SKyXT70c4yooRSxzPZ8/edit?usp=sharing'
+                                target='_blank'
                                 className='flex flex-row items-center group px-3 sm:hover:px-5 py-2 bg-pink-950 bg-opacity-60 hover:bg-opacity-80 transition-all rounded-lg gap-x-2'>
                                 <PiToiletPaperDuotone className='group-hover:text-lg'/>Past Meeting Archives
                             </Link>
