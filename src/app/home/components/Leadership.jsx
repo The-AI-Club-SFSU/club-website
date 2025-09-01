@@ -271,7 +271,7 @@ export function Leadership() {
 
             <div className='max-w-[1400px] flex flex-col justify-center items-center w-full h-full py-[44px] px-[10px] gap-4 overflow-x-hidden'>
 
-                <div className='flex flex-row mb-[-8px]'>
+                {/* <div className='flex flex-row mb-[-8px]'>
                     <Image
                         src={'/assets/bits/kits/kitty_bubbles.png'}
                         className='z-10 w-10 md:w-12 hover:!scale-110 transition duration-300 ease-out'
@@ -296,12 +296,12 @@ export function Leadership() {
                         height={32}
                         unoptimized
                     />
-                </div>
+                </div> */}
 
                 <div className='flex flex-col items-center'>
                     <ReactTyped
                         className='title-main w-full text-center text-3xl sm:text-4xl font-semibold'
-                        strings={['Our Chapter Leadership']}
+                        strings={['Our Leadership']}
                         typeSpeed={75}
                         startWhenVisible
                     />

@@ -33,14 +33,13 @@ export default function App() {
             
             <Leadership />
 
-            <Techstack />
+            {/* <Techstack /> */}
 
-            <About />
-
+            {/* <About /> */}
             <div className='w-full bg-gradient-to-b from-neutral-900 via-black to-black py-14'>
                 <h1 className='title-main mx-auto text-3xl text-center sm:text-4xl font-extrabold text-white'>
                     <span className='text-shadow shadow-gray-700'>
-                        Heyo! Journey with us in&nbsp;
+                        Journey with us in&nbsp;
                     </span>
                     <ReactTyped
                         strings={GALLERY_TYPED_WORDS}
