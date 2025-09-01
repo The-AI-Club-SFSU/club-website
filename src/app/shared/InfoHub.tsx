@@ -30,7 +30,7 @@ export function InfoHub(): React.ReactNode {
 
             {/* <div className='title-main w-full text-center text-3xl sm:text-4xl font-semibold'>Chapter Overview</div> */}
 
-            <div className='w-full max-w-[1260px] px-8 xl:px-12 py-10 flex flex-col md:flex-row justify-center items-center gap-x-0 md:gap-x-8 gap-y-12 xl:gap-x-16'>
+            <div className='w-full max-w-[1260px] px-8 xl:px-12 py-10 flex flex-col md:flex-row justify-center gap-x-0 md:gap-x-8 gap-y-12 xl:gap-x-16'>
 
                 <div className='flex flex-col gap-y-4 w-full px-2 md:px-0'>
                     <div>
@@ -47,7 +47,7 @@ export function InfoHub(): React.ReactNode {
                     <div>
                         <h2 className='title-main text-neutral-400 font-semibold'>⏰ WHEN</h2>
                         <h2 className='title-main text-3xl font-semibold pr-0 md:pr-16'>
-                            Weekly, <span className='text-[#FCD690] font-bold'>{nextMeetingDay}s</span> at <span className='text-blue-200 font-bold'>{meetingTimeFormattedHour}.</span>
+                            Weekly, <span className='text-[#FCD690] font-bold'>{nextMeetingDay}s</span> at <span className='text-blue-200 font-bold'>{meetingTimeFormattedHour}</span>
                         </h2>
                         <div className='text-neutral-300'>
                             Next meeting will be on <span className='underline underline-offset-2'>{nextMeetingDate}</span> which is in:
@@ -99,7 +99,7 @@ export function InfoHub(): React.ReactNode {
                         <h2 className='text-neutral-400'>Good-to-know information for current and future student members~!</h2>
                         <div className='w-full h-[1px] bg-neutral-400 my-3' />
                         <div className='flex flex-row flex-wrap justify-end font-semibold gap-x-2 gap-y-2'>
-                            <Link 
+                            {/* <Link 
                                 href='https://docs.google.com/document/d/1zQNKe-yL5rwGuMRI5siLUNC_SKyXT70c4yooRSxzPZ8/edit?usp=sharing'
                                 target='_blank'
                                 className='flex flex-row items-center group px-3 sm:hover:px-5 py-2 bg-pink-950 bg-opacity-60 hover:bg-opacity-80 transition-all rounded-lg gap-x-2'>
@@ -116,7 +116,7 @@ export function InfoHub(): React.ReactNode {
                                 target='_blank' 
                                 className='flex flex-row items-center group px-3 sm:hover:px-5 py-2 bg-yellow-950 bg-opacity-60 hover:bg-opacity-80 transition-all rounded-lg gap-x-2'>
                                 <SiGithub className='group-hover:text-lg'/>Join our GitHub Organization
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
 
