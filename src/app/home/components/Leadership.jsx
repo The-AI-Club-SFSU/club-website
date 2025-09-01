@@ -243,8 +243,10 @@ function MinorLeaderCard({ details, index }) {
             }
             transition={{ duration: 1.3, delay: index * 0.45, ease: 'easeOut' }}
             className={`${isAnimating && 'pointer-events-none'} w-[256px] hover:z-20 relative leading-[21px] opacity-0 hover:w-[280px] border-b border-neutral-800 border-1 transition-all duration-300 rounded-xl select-none shadow-sm hover:shadow-lg ${details.color_complex} bg-gradient-to-b to-transparent`}
-            key={details.title}
-        >
+            key={details.title} >
+
+
+
             {/* Role and Name of Person */}
             <div className='rounded-xl p-3'>
                 <div className='absolute text-xl'>{details.icon}</div>

@@ -37,11 +37,11 @@ f
                             Join Us.{' '}
                         </span>
                         <span className='text-yellow-300 drop-shadow-[0_0_10px_rgba(255,250,50,0.45)]'>
-                            The Computer Science Club.
+                            The AI Club.
                         </span>
                     </h1>
                     <h1 className='title-main w-full text-center text-2xl md:text-5xl font-semibold drop-shadow-[0_0_12px_rgba(255,255,255,0.2)]'>
-                        Open to all for 2024—2025.
+                        Open to all for 2025.
                     </h1>
                     <h1 className='title-main w-full text-center text-xl font-semibold drop-shadow-[0_0_12px_rgba(255,255,255,0.2)] animate-pulse'>
                         Join our Community on Discord now below!
