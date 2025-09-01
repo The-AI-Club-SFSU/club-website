@@ -21,8 +21,8 @@ export function IntroFade(): React.ReactNode {
                 src={'/assets/bits/ai_club_logo.webp'}
                 className='opacity-90 animate-pulse'
                 alt=''
-                width={100}
-                height={100}
+                width={140}
+                height={140}
                 unoptimized
             />
             <Image
