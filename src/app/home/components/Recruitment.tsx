@@ -37,6 +37,7 @@ export function Recruitment(): React.ReactNode {
                             Join Us.{' '}
                         </span>
                         <span className='text-yellow-300 drop-shadow-[0_0_10px_rgba(255,250,50,0.45)]'>
+
                             The Artificial Intelligence Club.
                         </span>
                     </h1>

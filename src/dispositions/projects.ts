@@ -32,7 +32,7 @@ export interface ProjectDetails {
 }
 
 export const projects: { [key: string]: ProjectDetails } = {
-    'Join us on GitHub & Trello': {
+    'Join us on GitHub': {
         backdrop: '/assets/projects/backdrops/mw2019_cleanhouse.mp4',
         thumbnail: '/assets/projects/thumbnails/github_trello.png',
         description:
