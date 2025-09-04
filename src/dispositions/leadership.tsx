@@ -49,7 +49,7 @@ export const leadership = [
             {
                 name: '-',
                 role: 'President',
-                imgSrc:  '',
+                imgSrc: pfp_none,
                 quote: '',
                 email: 'mailto:president+website@skycs.club',
                 linktree: 'https://www.linktr.ee/devalto',
@@ -63,7 +63,7 @@ export const leadership = [
             {
                 name: 'Jonnald Hernandez',
                 role: 'Vice-President',
-                imgSrc: '',
+                imgSrc: pfp_none,
                 quote: '',
                 email: 'mailto:vicepresident+website@skycs.club',
                 discord: 'https://discordapp.com/users/188163620826382336',
@@ -75,7 +75,7 @@ export const leadership = [
             {
                 name: 'Yuting Duan',
                 role: 'Secretary',
-                imgSrc: '',
+                imgSrc: pfp_none,
                 quote: '',
                 email: 'mailto:secretary+website@skycs.club',
                 linktree: '',
@@ -86,7 +86,7 @@ export const leadership = [
             {
                 name: 'Oscar Meza',
                 role: 'Treasurer',
-                imgSrc: '',
+                imgSrc: pfp_none,
                 quote: '',
                 email: 'mailto:treasurer+website@skycs.club',
                 linktree: '',
@@ -100,7 +100,7 @@ export const leadership = [
             {
                 name: '-',
                 role: 'Marketing & Outreach',
-                imgSrc: '',
+                imgSrc: pfp_none,
                 quote: '"The human brain, such an enigma." - Majed',
                 linktree: '',
                 email: 'mailto:projectmanager+website@skycs.club',
@@ -114,7 +114,7 @@ export const leadership = [
             {
                 name: 'Majed Elqossari',
                 role: 'Associate Project Manager',
-                imgSrc: '',
+                imgSrc: pfp_none,
                 quote: '"Strive always to excel in virtue and truth." - Prophet Muhammed',
                 github: 'https://www.github.com/CptnMaj',
                 email: 'mailto:assocprojectmanager+website@skycs.club',
@@ -126,7 +126,7 @@ export const leadership = [
             {
                 name: 'Amapola Garcia-Gomez',
                 role: 'Social Outreach Coordinator',
-                imgSrc: '',
+                imgSrc: pfp_none,
                 quote: '"You can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future." - Steve Jobs',
                 discord: 'https://discordapp.com/users/711984995387965513',
                 linkedin: 'www.linkedin.com/in/amapolagarcia',
@@ -138,7 +138,7 @@ export const leadership = [
             {
                 name: 'Denise Hum',
                 role: 'Chapter Faculty Advisor',
-                imgSrc: '',
+                imgSrc: pfp_none,
                 quote: 'Data are summaries of thousands of stories. Tell a few of those stories to help make the data meaningful.',
                 linktree: '',
                 email: 'mailto:humd+website@smccd.edu',
@@ -150,7 +150,7 @@ export const leadership = [
             {
                 name: 'Lynn Aung',
                 role: 'Chapter Technologist',
-                imgSrc: '',
+                imgSrc: pfp_none,
                 quote: '"The only time I look down is when I tie my shoe." - Lynn Aung',
                 discord: 'https://discordapp.com/users/1134930369230147685',
                 github: 'https://github.com/loofsan',
@@ -160,7 +160,7 @@ export const leadership = [
             {
                 name: 'Rea Angela Vera Cruz',
                 role: 'Chapter Technologist',
-                imgSrc: '',
+                imgSrc: pfp_none,
                 quote: '',
                 email: 'mailto:technologists+website@skycs.club',
                 discord: 'https://discordapp.com/users/115633349237669890',
@@ -170,7 +170,7 @@ export const leadership = [
             {
                 name: 'Michael Tse',
                 role: 'Chapter Technologist',
-                imgSrc: '',
+                imgSrc: pfp_none,
                 quote: '',
                 email: 'mailto:technologists+website@skycs.club',
                 discord: 'https://discordapp.com/users/396563683255517194',
