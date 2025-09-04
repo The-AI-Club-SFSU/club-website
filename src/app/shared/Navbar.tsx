@@ -130,7 +130,7 @@ export function Navbar(): React.ReactNode {
                         <p>The Intercollegiate Hackathon</p>
                     </Link> */}
 
-                    <Link href='https://discord.com/invite/z5P9kccwRh' target='_blank' className='py-1 px-3 hover:px-6 active:scale-90 flex bg-neutral-950/25 hover:bg-pink-400/30 rounded-lg transition-all duration-300'>
+                    <Link href='https://discord.gg/Sd3TQkQag2' target='_blank' className='py-1 px-3 hover:px-6 active:scale-90 flex bg-neutral-950/25 hover:bg-pink-400/30 rounded-lg transition-all duration-300'>
                         <GoCodeOfConduct className='my-auto mr-2 text-pink-300'/>
                         <p>Join Us!</p>
                     </Link>

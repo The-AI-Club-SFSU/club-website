@@ -7,7 +7,7 @@ export default function Socials() {
     return (
         <div className='flex flex-row flex-wrap gap-3 justify-center py-4'>
             <Link
-                href='https://discord.com/'
+                href='https://discord.gg/Sd3TQkQag2'
                 target='_blank'
             >
                 <button className='flex group w-[160px] sm:w-[180px] sm:hover:w-[200px] justify-center bg-blue-400/15 bg-opacity-80 rounded-md gap-2 py-3 active:scale-95 hover:bg-blue-800 hover:outline-4 hover:text-white text-xl font-bold active:outline-2 hover:outline-double border-neutral-800 hover:outline-blue-600 active:outline-neutral-200 duration-200 active:duration-200'>
@@ -47,7 +47,7 @@ export default function Socials() {
             </Link>
 
             <Link
-                href='https://github.com/'
+                href='https://github.com/the-ai-club-sfsu'
                 target='_blank'
             >
                 <button className='flex group w-[160px] sm:w-[180px] sm:hover:w-[220px] justify-center bg-yellow-800/15 bg-opacity-80 rounded-md gap-1 py-3 active:scale-95 hover:bg-yellow-700 hover:outline-4 hover:text-white text-xl font-bold active:outline-2 hover:outline-double border-neutral-800 hover:outline-yellow-700 active:outline-neutral-200 duration-200 active:duration-200'>
