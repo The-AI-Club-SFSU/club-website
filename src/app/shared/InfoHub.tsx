@@ -82,7 +82,7 @@ export function InfoHub(): React.ReactNode {
                             </span> */}
                             Site Announcement
                         </h1>
-                        <h2 className='text-neutral-400'>Words for our student members~! and visitors too!</h2>
+                        <h2 className='text-neutral-400'>Active details for our student members~! and visitors too!</h2>
                         <div className='w-full h-[1px] bg-neutral-400 my-3' />
                         <div className='flex flex-col italic gap-y-4'>
                             {INFOHUB_ANNOUNCEMENT}
@@ -94,7 +94,7 @@ export function InfoHub(): React.ReactNode {
                             {/* <span>
                                 <Image src='/assets/bits/kits/kitty_read.png' height={32} width={32} className='mr-3 mt-1' alt='' />
                             </span> */}
-                            Member Information Hub
+                            Resource Hub
                         </h1>
                         <h2 className='text-neutral-400'>Good-to-know information for current and future student members~!</h2>
                         <div className='w-full h-[1px] bg-neutral-400 my-3' />
@@ -126,11 +126,7 @@ export function InfoHub(): React.ReactNode {
 
 
 
-            <div className='border-t-[1px] py-8 px-4 text-center border-neutral-600'>
-                <p className='text-lg'>🤝</p>
-                <p className='title-main font-semibold text-xl'>Let&apos;s connect.</p>
-                <p className='title-main text-neutral-500 font-semibold'>Expand your professional network with us.</p>
-
+            <div className='py-8 px-4 text-center border-neutral-600 border-t-[1px]'>
                 <Socials />
             </div>
             
