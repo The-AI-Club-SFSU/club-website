@@ -19,10 +19,11 @@ import {
 import {
     CgArrowRightR
 } from 'react-icons/cg'
-import { MdOutlineMail } from 'react-icons/md';
+import { MdOutlineMail } from 'react-icons/md'
 import { FaGlobeAmericas, FaQuoteLeft } from 'react-icons/fa'
 
 import leadership, { FALLBACK_QUOTE } from '@/dispositions/leadership'
+import Link from 'next/link'
 
 interface MajorLeaderCardType {
     quote: string
@@ -147,55 +148,55 @@ function MajorLeaderCard ({ details, index }: { details: MajorLeaderCardType, in
                 className='z-10 absolute hidden group-hover/majorcard:flex border-b-4 border-green-700 justify-center w-full rounded-b-lg bg-gradient-to-b from-[#040a04] to-black gap-2 px-2 pb-2'
             >
                 {details.email ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.email}
                         target='_blank'
                         rel='noreferrer'
                     >
                         <MdOutlineMail size={'3vh'} className='h-10' />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
                 {details.linktree ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.linktree}
                         target='_blank'
                         rel='noreferrer'
                     >
                         <SiLinktree size={'3vh'} className='h-10' />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
                 {details.github ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.github}
                         target='_blank'
                         rel='noreferrer'
                     >
                         <SiGithub size={'3vh'} className='h-10' />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
                 {details.instagram ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.instagram}
                         target='_blank'
                         rel='noreferrer'
                     >
                         <SiInstagram size={'3vh'} className='h-10' />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
                 {details.discord ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.discord}
                         target='_blank'
@@ -206,31 +207,31 @@ function MajorLeaderCard ({ details, index }: { details: MajorLeaderCardType, in
                             size={'3vh'}
                             className='h-10'
                         />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
                 {details.linkedin ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.linkedin}
                         target='_blank'
                         rel='noreferrer'
                     >
                         <SiLinkedin size={'3vh'} className='h-10' />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
                 {details.website ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.website}
                         target='_blank'
                         rel='noreferrer'
                     >
                         <FaGlobeAmericas size={'3vh'} className='h-10' />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
@@ -343,6 +344,7 @@ export function Leadership() {
                     
                 </div>
 
+                
                 <div className='flex flex-col gap-y-6'>
 
                     <div className='w-full text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]'></div>
@@ -381,10 +383,6 @@ export function Leadership() {
                             )
                         )}
                     </div>
-
-                    {/* <p className='px-6 title-main text-neutral-700 text-center font-semibold'>
-                        pssst! past Leadership will be shown soon!~our history books.
-                    </p> */}
 
                     <div className='w-full text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]'></div>
 
