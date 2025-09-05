@@ -1,8 +1,9 @@
 'use client'
 
+import { useRef } from 'react'
+
 import Image from 'next/image'
 
-import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 export function IntroFade(): React.ReactNode {
@@ -15,15 +16,15 @@ export function IntroFade(): React.ReactNode {
             initial={{ opacity: 1 }}
             animate={isInView ? { opacity: 0 } : { opacity: 1 }}
             transition={{ duration: 1.4, delay: 0.4, ease: 'easeOut' }}
-            className='z-30 w-full h-screen fixed flex flex-col items-center justify-center pointer-events-none bg-black'
+            className='z-50 fixed w-full h-screen flex flex-col items-center justify-center pointer-events-none bg-black'
         >
             <Image
                 src={'/assets/bits/ai_club_logo.webp'}
-                className='opacity-90 animate-pulse'
+                className='animate-pulse'
                 alt=''
                 width={140}
                 height={140}
-                unoptimized
+                priority
             />
             <Image
                 src={'/assets/bits/loader.gif'}
@@ -32,9 +33,10 @@ export function IntroFade(): React.ReactNode {
                 width={100}
                 height={100}
                 unoptimized
+                priority
             />
 
-            {/* <p className="text-neutral-500">Loading...</p> */}
+            {/* <p className='text-neutral-500'>loading content...</p> */}
         </motion.div>
     )
 }
