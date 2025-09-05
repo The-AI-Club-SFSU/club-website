@@ -13,7 +13,7 @@ export const INFOHUB_MEETING_LOCATION_LINK: string = 'https://maps.app.goo.gl/bj
 
 export const INFOHUB_ANNOUNCEMENT: React.ReactNode = (
     <>
-        <p>Greetings traveler! Get comfortable and look around! Also, be sure to subscribe to our social media accounts below!</p>
+        <p>🌊 Greetings traveler! Get comfortable and look around! Also, be sure to 📬 subscribe to our social media accounts below!</p>
         <p className='font-semibold'>Looking to join? Join us at our next meeting! (see meetings to the left)</p>
     </>
 )
