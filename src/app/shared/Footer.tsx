@@ -12,8 +12,13 @@ export function Footer() {
 
             <Socials/ >
 
+            <div className='h-16'></div>
+
             <div className='flex flex-row items-center justify-center gap-4 py-2 w-full'>
-                <Link href='https://www.sfsu.edu' target='_blank'>
+
+                {/* sfsu banner */}
+                <Link href='https://www.sfsu.edu' target='_blank' className='flex flex-col gap-2'>
+                    <p className='text-left'>A student organization of</p>
                     <Image
                         src={'/assets/bits/sfsu_wordmark.png'}
                         width={256}
@@ -21,6 +26,8 @@ export function Footer() {
                         alt=''
                     />
                 </Link>
+
+                {/* potentially add ACM @ SFSU  */}
                 {/* <Link href='https://smccd.edu/' target='_blank'>
                     <Image
                         src={'/assets/bits/smccd_brand.png'}
