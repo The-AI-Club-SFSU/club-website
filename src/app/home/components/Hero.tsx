@@ -87,7 +87,7 @@ export function Hero(): React.ReactNode {
                 {/* The main texts */}
                 <h1 className='leading-tight'>
                     <div className='text-[5.2vw] xl:text-[52px] font-bold'>The Artificial Intelligence Club</div>
-                    <div className='text-[4.2vw] xl:text-[36px] text-[#FCD690]'>@ San Francisco State University</div>
+                    <div className='text-[4.2vw] xl:text-[36px] text-[#ffd24f]'>@ San Francisco State University</div>
                 </h1>
 
                 <div className='text-[3.25vw] sm:text-xl'>
