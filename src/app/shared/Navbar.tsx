@@ -7,8 +7,6 @@
 
 import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
-
-// import { Link as ScrollLink, animateScroll } from 'react-scroll'
 import Link from 'next/link'
 
 import { HiOutlineRocketLaunch } from 'react-icons/hi2'
@@ -175,13 +173,6 @@ export function Navbar(): React.ReactNode {
                             <div className='p-3 hover:px-5 flex bg-neutral-950/25 hover:bg-neutral-700/50 rounded-lg transition-all'>
                                 <FiTool className='my-auto mr-2' />
                                 Projects
-                            </div>
-                        </Link>
-
-                        <Link href='./hackathon' onMouseUp={handleClick}>
-                            <div className='p-3 hover:px-5 flex bg-neutral-950/25 hover:bg-yellow-700/50 rounded-lg transition-all'>
-                                <HiOutlineRocketLaunch className='my-auto mr-2 text-yellow-300' />
-                                The Intercollegiate Hackathon
                             </div>
                         </Link>
 
