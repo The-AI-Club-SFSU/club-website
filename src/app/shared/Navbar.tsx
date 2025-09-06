@@ -40,7 +40,7 @@ export function Navbar(): React.ReactNode {
     }, [announceDismissed])
 
     return (
-        <div className='z-50 absolute flex flex-col w-full'>
+        <nav className='z-50 absolute flex flex-col w-full'>
 
             {/* Announcement Banner */}
             {ANNOUNCEMENT_TEXT ? (
@@ -186,6 +186,6 @@ export function Navbar(): React.ReactNode {
                     </div>
                 </div>
             </motion.div>
-        </div>
+        </nav>
     )
 }

@@ -26,7 +26,7 @@ const meetingTimeFormattedHour = new Date(nextMeetingDate + ' ' + INFOHUB_MEETIN
 
 export function InfoHub(): React.ReactNode {
     return (
-        <div className='flex flex-col justify-center items-center py-72 bg-black'>
+        <section className='flex flex-col justify-center items-center py-72 bg-black'>
 
             {/* <div className='title-main w-full text-center text-3xl sm:text-4xl font-semibold'>Chapter Overview</div> */}
 
@@ -130,6 +130,6 @@ export function InfoHub(): React.ReactNode {
                 <Socials />
             </div>
             
-        </div>
+        </section>
     )
 }

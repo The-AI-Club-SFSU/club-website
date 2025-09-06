@@ -290,7 +290,7 @@ export function Leadership() {
     const [currentPage, setCurrentPage] = useState(0)
 
     return (
-        <div className='w-full h-full flex justify-center items-center pb-40 bg-gradient-to-b from-black via-[#031302] to-black'>
+        <section className='w-full h-full flex justify-center items-center pb-40 bg-gradient-to-b from-black via-[#031302] to-black'>
             {/* <Element name='leadership' /> */}
 
             <div className='max-w-[1400px] flex flex-col justify-center items-center w-full h-full py-[44px] px-[10px] gap-4 overflow-x-hidden'>
@@ -389,6 +389,6 @@ export function Leadership() {
                 </div>
             </div>
 
-        </div>
+        </section>
     )
 }

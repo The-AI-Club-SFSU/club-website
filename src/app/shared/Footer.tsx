@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+
 import Socials from './Socials'
 
 export function Footer() {
@@ -8,17 +9,18 @@ export function Footer() {
 
             <Socials/ >
 
-            <div className='h-16'></div>
+            {/* padding */}
+            <div className='h-16' />
 
             <div className='flex flex-row items-center justify-center gap-8 py-2 w-full'>
 
-                {/* sfsu banner */}
+                {/* SFSU banner */}
                 <Link href='https://www.sfsu.edu' target='_blank' className='flex flex-col gap-2'>
                     <p className='text-left'>A student organization of</p>
                     <Image
                         src={'/assets/bits/sfsu_wordmark.png'}
                         width={256}
-                        height={128}
+                        height={128} 
                         alt='SFSU Wordmark (links to official website)'
                     />
                 </Link>
@@ -45,6 +47,7 @@ export function Footer() {
                     Copyright ©️ The Artificial Intelligence Club @ SFSU 2023-2025
                 </p>
             </div>
+
         </footer>
     )
 }

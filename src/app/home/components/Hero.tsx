@@ -27,7 +27,7 @@ export function Hero(): React.ReactNode {
     const isInView = useInView(ref)
 
     return (
-        <div className='w-full h-screen'>
+        <section className='w-full h-screen'>
             {/* <Element name='hero' /> */}
 
             {/* the hero backdrop */}
@@ -136,6 +136,6 @@ export function Hero(): React.ReactNode {
                 <IoMdArrowRoundDown className='text-2xl' />
                 <p className='animate-pulse select-none'>Scroll Down to Enter</p>
             </div>
-        </div>
+        </section>
     )
 }

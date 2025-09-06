@@ -11,7 +11,7 @@ export function IntroFade(): React.ReactNode {
     const isInView = useInView(ref)
 
     return (
-        <motion.div
+        <motion.section
             ref={ref}
             initial={{ opacity: 1 }}
             animate={isInView ? { opacity: 0 } : { opacity: 1 }}
@@ -37,6 +37,6 @@ export function IntroFade(): React.ReactNode {
             />
 
             {/* <p className='text-neutral-500'>loading content...</p> */}
-        </motion.div>
+        </motion.section>
     )
 }
