@@ -293,6 +293,13 @@ export function Leadership() {
 
             <div className='max-w-[1400px] flex flex-col justify-center items-center w-full h-full py-[44px] px-[10px] gap-4 overflow-x-hidden'>
 
+                <Image
+                    width={80}
+                    height={80}
+                    src={'/assets/bits/ai_club_logo_bot.webp'}
+                    alt=''
+                />
+
                 {/* <div className='flex flex-row mb-[-8px]'>
                     <Image
                         src={'/assets/bits/kits/kitty_bubbles.png'}
