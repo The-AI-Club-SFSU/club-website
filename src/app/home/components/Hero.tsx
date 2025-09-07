@@ -84,7 +84,7 @@ export function Hero(): React.ReactNode {
 
                 {/* The main texts */}
                 <h1 className='leading-tight group'>
-                    <div className='text-[5.2vw] xl:text-[52px] font-bold transition-all duration-200 group-hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.6)]'>The Artificial Intelligence Club</div>
+                    <div className='text-[5.2vw] xl:text-[52px] font-bold transition-all duration-300 group-hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.6)]'>The Artificial Intelligence Club</div>
                     <div className='text-[4.2vw] xl:text-[36px] text-[#ffd24f] transition-all duration-500 group-hover:drop-shadow-[0_0_6px_rgba(255,210,79,0.8)]'>@ San Francisco State University</div>
                 </h1>
 
