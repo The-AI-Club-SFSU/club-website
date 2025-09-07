@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { ReactTyped } from 'react-typed'
-// import { Element } from 'react-scroll'
 
 import Image from 'next/image'
 
@@ -28,7 +27,6 @@ export function Hero(): React.ReactNode {
 
     return (
         <section className='w-full h-screen'>
-            {/* <Element name='hero' /> */}
 
             {/* the hero backdrop */}
             <motion.div

@@ -2,7 +2,6 @@
 
 import React from 'react'
 
-// import { Element } from 'react-scroll'
 import { ReactTyped } from 'react-typed'
 
 import { HomeAlbum } from '@/dispositions/gallery'
@@ -51,7 +50,6 @@ export default function App() {
                     ></ReactTyped>
                 </h1>
 
-                {/* <Element name='gallery' /> */}
                 <Gallery album={HomeAlbum} />
             </div>
 

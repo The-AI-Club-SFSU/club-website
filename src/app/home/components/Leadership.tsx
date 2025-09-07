@@ -1,7 +1,6 @@
 'use client'
 
 import React, { ReactNode, useRef, useState } from 'react'
-// import { Element } from 'react-scroll'
 import { ReactTyped } from 'react-typed'
 
 import { motion, useInView } from 'framer-motion'
@@ -291,7 +290,6 @@ export function Leadership() {
 
     return (
         <section className='w-full h-full flex justify-center items-center pb-40 bg-gradient-to-b from-black via-[#031302] to-black'>
-            {/* <Element name='leadership' /> */}
 
             <div className='max-w-[1400px] flex flex-col justify-center items-center w-full h-full py-[44px] px-[10px] gap-4 overflow-x-hidden'>
 
