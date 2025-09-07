@@ -118,8 +118,8 @@ export function Navbar(): React.ReactNode {
                         <p>Home</p>
                     </Link>
 
-                    <Link href='/projects' className='py-1 px-3 hover:px-6 active:scale-90 flex bg-neutral-950/25 hover:bg-neutral-700/50 rounded-lg transition-all duration-300'>
-                        <FiTool className='my-auto mr-2' />
+                    <Link href='/projects' className='py-1 px-3 hover:px-6 active:scale-90 flex bg-neutral-950/25 hover:bg-lime-700/50 rounded-lg transition-all duration-300'>
+                        <FiTool className='my-auto mr-2 text-lime-300' />
                         <p>Projects</p>
                     </Link>
 
