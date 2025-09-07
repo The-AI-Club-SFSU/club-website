@@ -99,7 +99,6 @@ export function Navbar(): React.ReactNode {
                         height={48}
                         src={'/assets/bits/ai_club_logo_bot.webp'}
                         alt=''
-                        unoptimized
                     />
                     <p className='font-bold title-main'>The AI Club</p>
                 </Link>
