@@ -1,11 +1,6 @@
 import React from 'react'
 
 import Link from 'next/link'
-import Image from 'next/image'
-
-import { BiBriefcase } from 'react-icons/bi'
-import { PiToiletPaperDuotone } from 'react-icons/pi'
-import { SiGithub } from 'react-icons/si'
 
 import { INFOHUB_MEETING_DAY, INFOHUB_MEETING_HOUR, INFOHUB_MEETING_LOCATION, INFOHUB_MEETING_LOCATION_LINK, INFOHUB_ANNOUNCEMENT } from '@/dispositions/general'
 
