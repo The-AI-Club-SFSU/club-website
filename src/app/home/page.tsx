@@ -32,9 +32,11 @@ export default function App() {
             
             <Leadership />
 
+            {/* reintroduce these two sections with new content in near future */}
             {/* <Techstack /> */}
 
             {/* <About /> */}
+
             <div className='w-full bg-gradient-to-b from-neutral-900 via-black to-black py-14'>
                 <h1 className='title-main mx-auto text-3xl text-center sm:text-4xl font-extrabold text-white'>
                     <span className='text-shadow shadow-gray-700'>
