@@ -1,8 +1,18 @@
-import NativeImage, { ImageProps } from 'next/image'
+import NativeImage, { ImageProps as NativeImageProps} from 'next/image'
 
-// const SOURCE_PLACEHOLDER = require('$/images/image.placeholder.webp')
-// const SOURCE_FALLBACK = require('$/images/image.missing.webp')
+const SOURCE_PLACEHOLDER = '/assets/image.placeholder.web'
+const SOURCE_FALLBACK = '/assets/image.missing.webp'
 
-export function Image({alt, ...rest}: ImageProps) {
-    return <NativeImage alt={alt} {...rest} />
+interface ImageProps extends Omit<NativeImageProps, 'src'> {
+    src?: string
+}
+
+export function Image({src, alt, ...rest}: ImageProps) {
+    return <NativeImage 
+        alt={alt}
+        src={src || SOURCE_FALLBACK}
+        placeholder={'blur'}
+        blurDataURL={SOURCE_PLACEHOLDER}
+        {...rest}
+    />
 }
