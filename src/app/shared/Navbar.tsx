@@ -114,13 +114,13 @@ export function Navbar(): React.ReactNode {
                         // onMouseUp={() => {
                         //     animateScroll.scrollToTop()
                         // }}
-                        className='py-1 px-3 hover:px-6 active:scale-90 flex bg-neutral-950/25 hover:bg-neutral-700/50 rounded-lg transition-all duration-300'
+                        className='py-1 px-3 hover:px-6 active:scale-90 flex bg-neutral-950/25 hover:bg-purple-500/30 rounded-lg transition-all duration-300'
                     >
                         <GoHome className='my-auto mr-2' />
                         <p>Home</p>
                     </Link>
 
-                    <Link href='/projects' className='py-1 px-3 hover:px-6 active:scale-90 flex bg-neutral-950/25 hover:bg-neutral-700/50 rounded-lg transition-all duration-300'>
+                    <Link href='/projects' className='py-1 px-3 hover:px-6 active:scale-90 flex bg-neutral-950/25 hover:bg-yellow-400/30 rounded-lg transition-all duration-300'>
                         <FiTool className='my-auto mr-2' />
                         <p>Projects</p>
                     </Link>
@@ -165,25 +165,19 @@ export function Navbar(): React.ReactNode {
                             //     handleClick()
                             // }}
                         >
-                            <div className='p-3 hover:px-5 flex bg-neutral-950/25 hover:bg-neutral-700/50 rounded-lg transition-all'>
+                            <div className='p-3 hover:px-5 flex bg-neutral-950/25 hover:bg-purple-500/30 rounded-lg transition-all'>
                                 <GoHome className='my-auto mr-2' />
                                 Home
                             </div>
                         </Link>
 
                         <Link href='./projects' onMouseUp={handleClick}>
-                            <div className='p-3 hover:px-5 flex bg-neutral-950/25 hover:bg-neutral-700/50 rounded-lg transition-all'>
+                            <div className='p-3 hover:px-5 flex bg-neutral-950/25 hover:bg-yellow-400/30 rounded-lg transition-all'>
                                 <FiTool className='my-auto mr-2' />
                                 Projects
                             </div>
                         </Link>
 
-                        <Link href='./hackathon' onMouseUp={handleClick}>
-                            <div className='p-3 hover:px-5 flex bg-neutral-950/25 hover:bg-yellow-700/50 rounded-lg transition-all'>
-                                <HiOutlineRocketLaunch className='my-auto mr-2 text-yellow-300' />
-                                The Intercollegiate Hackathon
-                            </div>
-                        </Link>
 
                         <Link href='https://discord.gg/z5P9kccwRh' onMouseUp={handleClick}>
                             <div className='p-3 hover:px-5 flex bg-neutral-950/25 hover:bg-pink-400/30 rounded-lg transition-all'>
