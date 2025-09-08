@@ -12,21 +12,40 @@ import { INFOHUB_MEETING_DAY, INFOHUB_MEETING_HOUR, INFOHUB_MEETING_LOCATION, IN
 import { Countdown } from 'shared/_modules'
 import Socials from 'shared/Socials'
 
-function getNextDayOfWeek(currentDate: Date, dayOfWeek: number) {
-    const resultDate = new Date(currentDate.getTime())
-    resultDate.setDate(currentDate.getDate() + (7 + dayOfWeek - currentDate.getDay()) % 7)
-
-    return resultDate.toLocaleDateString()
+function getNextBiWeeklyMeeting() {
+    // First meeting is September 17, 2025
+    const firstMeeting = new Date('2025-09-17T18:00:00-07:00')
+    const currentDate = new Date()
+    
+    // If current date is before first meeting, return first meeting
+    if (currentDate < firstMeeting) {
+        return firstMeeting.toLocaleDateString()
+    }
+    
+    // Calculate weeks since first meeting
+    const msPerWeek = 7 * 24 * 60 * 60 * 1000
+    const weeksSinceFirst = Math.floor((currentDate.getTime() - firstMeeting.getTime()) / msPerWeek)
+    
+    // Find next bi-weekly meeting (every 2 weeks)
+    const nextMeetingWeeks = Math.ceil(weeksSinceFirst / 2) * 2
+    const nextMeetingDate = new Date(firstMeeting.getTime() + (nextMeetingWeeks * msPerWeek))
+    
+    // If the calculated date is in the past or today, move to next bi-weekly meeting
+    if (nextMeetingDate <= currentDate) {
+        nextMeetingDate.setDate(nextMeetingDate.getDate() + 14)
+    }
+    
+    return nextMeetingDate.toLocaleDateString()
 }
 
-const nextMeetingDate = getNextDayOfWeek(new Date(), INFOHUB_MEETING_DAY)
+const nextMeetingDate = getNextBiWeeklyMeeting()
 const nextMeetingDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][INFOHUB_MEETING_DAY]
 
 const meetingTimeFormattedHour = new Date(nextMeetingDate + ' ' + INFOHUB_MEETING_HOUR).toLocaleTimeString('en', { hour: '2-digit', minute:'2-digit' })
 
 export function InfoHub(): React.ReactNode {
     return (
-        <div className='flex flex-col justify-center items-center py-72 bg-black'>
+        <div className='flex flex-col justify-center items-center py-64 bg-black'>
 
             {/* <div className='title-main w-full text-center text-3xl sm:text-4xl font-semibold'>Chapter Overview</div> */}
 
@@ -47,8 +66,11 @@ export function InfoHub(): React.ReactNode {
                     <div>
                         <h2 className='title-main text-neutral-400 font-semibold'>⏰ WHEN</h2>
                         <h2 className='title-main text-3xl font-semibold pr-0 md:pr-16'>
-                            Weekly, <span className='text-[#FCD690] font-bold'>{nextMeetingDay}s</span> at <span className='text-blue-200 font-bold'>{meetingTimeFormattedHour}</span>
+                            Bi-Weekly, <span className='text-[#FCD690] font-bold'>{nextMeetingDay}s</span> at <span className='text-blue-200 font-bold'>{meetingTimeFormattedHour}</span>
                         </h2>
+                        <div className='text-neutral-400 text-sm italic'>
+                            (Subject to change)
+                        </div>
                         <div className='text-neutral-300'>
                             Next meeting will be on <span className='underline underline-offset-2'>{nextMeetingDate}</span> which is in:
                         </div>
@@ -64,9 +86,9 @@ export function InfoHub(): React.ReactNode {
                         </div>
                         <div className='text-neutral-300'>
                             You can also tune-in remotely on our{' '}
-                            <Link href='https://discord.com/channels/939701223144185867/1147046718710485034' target='_blank' className='text-purple-400 font-semibold'>Discord</Link> Stage.
+                            <Link href='https://discord.gg/tDtqmP5sGt' target='_blank' className='text-purple-400 font-semibold'>Discord</Link> Stage.
                         </div>
-                        <Link href='https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmJmNnBsb2M0N2Q2amhmaWU5YnBndHFhNDdfMjAyNTAyMDdUMjA1NTAwWiBza3lsaW5lY29tcHNjaWNsdWJAbQ&tmsrc=skylinecompsciclub%40gmail.com&scp=ALL' target='_blank'>
+                        <Link href='https://calendar.google.com/calendar/render?action=TEMPLATE&text=%F0%9F%A4%96+AI+Club+Meeting!+%F0%9F%A4%96&dates=20250917T180000/20250917T200000&ctz=America/Los_Angeles&location=Location+TBA&details=Bi-weekly%20AI%20Club%20meeting.%20All%20are%20welcome!%20To%20see%20the%20agenda%20for%20our%20meeting%2C%20please%20see%20the%20discord%20%23announcements%20channel!%20https%3A%2F%2Fdiscord.gg%2FPH7KxjPz24&recur=RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=WE' target='_blank'>
                             <p className='w-52 hover:w-56 transition-all p-2 my-2 text-sm text-center font-semibold hover:animate-pulse bg-yellow-900 rounded-lg'>🔔 Sign up for reminders!</p>
                         </Link>
                     </div>
@@ -80,9 +102,9 @@ export function InfoHub(): React.ReactNode {
                             {/* <span>
                                 <Image src='/assets/bits/kits/kitty_write.png' height={32} width={32} className='mr-3 mt-1' alt='' />
                             </span> */}
-                            Site Announcement
+                            About Us
                         </h1>
-                        <h2 className='text-neutral-400'>Words for our student members~! and visitors too!</h2>
+                        <h2 className='text-neutral-400'>Learn more about what we do and our community!</h2>
                         <div className='w-full h-[1px] bg-neutral-400 my-3' />
                         <div className='flex flex-col italic gap-y-4'>
                             {INFOHUB_ANNOUNCEMENT}
@@ -96,9 +118,15 @@ export function InfoHub(): React.ReactNode {
                             </span> */}
                             Member Information Hub
                         </h1>
-                        <h2 className='text-neutral-400'>Good-to-know information for current and future student members~!</h2>
+                        <h2 className='text-neutral-400'>Stay connected with our community!</h2>
                         <div className='w-full h-[1px] bg-neutral-400 my-3' />
-                        <div className='flex flex-row flex-wrap justify-end font-semibold gap-x-2 gap-y-2'>
+                        <div className='flex flex-col gap-y-3 text-neutral-300'>
+                            <p>We use Discord as our primary hub for communication and resources. Join to stay up to date with events, discussions, and the community.</p>
+                            <a href='https://discord.gg/tDtqmP5sGt' target='_blank' className='inline-flex items-center justify-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg transition-colors duration-200 hover:scale-105 active:scale-95'>
+                                🚀 Join Our Discord Community
+                            </a>
+                        </div>
+                        <div className='flex flex-row flex-wrap justify-end font-semibold gap-x-2 gap-y-2 mt-4'>
                             {/* <Link 
                                 href='https://docs.google.com/document/d/1zQNKe-yL5rwGuMRI5siLUNC_SKyXT70c4yooRSxzPZ8/edit?usp=sharing'
                                 target='_blank'

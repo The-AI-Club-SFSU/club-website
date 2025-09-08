@@ -91,7 +91,7 @@ export function Hero(): React.ReactNode {
                 </h1>
 
                 <div className='text-[3.25vw] sm:text-xl'>
-                    <p className='group'>&apos;future slogan here&apos; — the <span className='group-hover:text-red-300 group-hover:font-bold transition delay-100'>sky&apos;s</span> <span className='group-hover:text-red-300 group-hover:font-bold transition delay-300'>the</span> <span className='group-hover:text-red-300 group-hover:font-bold transition delay-500'>limit.</span></p>
+                    <p className='group'>&apos;AI, the Gator Way&apos; — <span className='group-hover:text-red-300 group-hover:font-bold transition delay-100'>driven</span> <span className='group-hover:text-red-300 group-hover:font-bold transition delay-300'>by</span> <span className='group-hover:text-red-300 group-hover:font-bold transition delay-500'>ideas,</span> <span className='group-hover:text-red-300 group-hover:font-bold transition delay-700'>powered</span> <span className='group-hover:text-red-300 group-hover:font-bold transition delay-900'>by</span> <span className='group-hover:text-red-300 group-hover:font-bold transition delay-1100'>AI.</span></p>
                 </div>
 
                 <h1 className='text-2xl'>
@@ -108,14 +108,18 @@ export function Hero(): React.ReactNode {
                 </h1>
 
                 <div
-                    // to='about'
-                    // smooth={true}
-                    // offset={-140}
-                    // duration={1500}
                     className='relative group w-[210px] hover:w-[240px] active:scale-95 duration-150 hover:border-green-900 border-white rounded-xl hover:outline hover:outline-[4px] active:outline-4 text-white text-lg title-main drop-shadow-[0_16px_20px_rgba(0,0,0,0.7)] overflow-hidden'
                 >
                     <IoMdArrowRoundDown className='absolute w-full h-full group-hover:translate-y-0 -translate-y-[100%] duration-300 bg-gradient-to-t from-[#16a34aec] to-[#ffffff91] pointer-events-none' />
-                    <button className='flex w-full h-full justify-center py-[6px] font-semibold text-center text-shadow-lg shadow-black hover:bg-green-600 bg-neutral-900 bg-opacity-50 duration-300 hover:border-green-300 overflow-hidden'>
+                    <button 
+                        onClick={() => {
+                            window.scrollTo({
+                                top: window.innerHeight + 256,
+                                behavior: 'smooth'
+                            });
+                        }}
+                        className='flex w-full h-full justify-center py-[6px] font-semibold text-center text-shadow-lg shadow-black hover:bg-green-600 bg-neutral-900 bg-opacity-50 duration-300 hover:border-green-300 overflow-hidden'
+                    >
                         <p>I&apos;m Interested</p>
                     </button>
                 </div> 
