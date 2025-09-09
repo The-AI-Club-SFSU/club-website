@@ -101,7 +101,7 @@ export function InfoHub(): React.ReactNode {
                             </span> */}
                             About Us
                         </h1>
-                        <h2 className='text-neutral-400'>Words for our student members~! and visitors too!</h2>
+                        <h2 className='text-neutral-400'>Words for our student members~! and public netizens too!</h2>
                         <div className='w-full h-[1px] bg-neutral-400 my-3' />
                         <div className='flex flex-col italic gap-y-4'>
                             {INFOHUB_ANNOUNCEMENT}
@@ -118,6 +118,13 @@ export function InfoHub(): React.ReactNode {
                         <h2 className='text-neutral-400'>Stay connected with our community!</h2>
                         <div className='w-full h-[1px] bg-neutral-400 my-3' />
                         <div className='flex flex-row flex-wrap justify-end font-semibold gap-x-2 gap-y-2'>
+                            <Link
+                                href='/'
+                                target='_blank'
+                                className='flex flex-row items-center group px-3 sm:hover:px-5 py-2 bg-pink-950 bg-opacity-60 hover:bg-opacity-80 transition-all rounded-lg gap-x-2'
+                            >
+                                <PiToiletPaperDuotone className='group-hover:text-lg'/>Placeholder Resource
+                            </Link>
                             {/* <Link 
                                 href='https://docs.google.com/document/d/1zQNKe-yL5rwGuMRI5siLUNC_SKyXT70c4yooRSxzPZ8/edit?usp=sharing'
                                 target='_blank'
