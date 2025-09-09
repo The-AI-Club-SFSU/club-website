@@ -27,7 +27,7 @@ import { LuConstruction } from 'react-icons/lu'
 import { AiOutlineGlobal } from 'react-icons/ai'
 import { MdOutlineEmojiEvents } from 'react-icons/md'
 
-import { PiFeatherDuotone, PiHandshakeBold } from 'react-icons/pi'
+import { PiFeatherDuotone, PiHandshakeBold, PiMegaphoneSimpleBold } from 'react-icons/pi'
 
 const dir_leaderPortraits = '/assets/home/leader_portraits/'
 const dir_2023_2024 = dir_leaderPortraits + '2023_2024/'
@@ -64,25 +64,16 @@ export const leadership = [
             {
                 name: 'Kunj Shah',
                 role: 'Vice President',
-                imgSrc: dir_2025_2026 + 'placeholder.png',
+                imgSrc: dir_2025_2026 + 'kunj.jpg',
                 quote: '',
                 email: '',
                 discord: '',
                 linktree: '',
                 github: '',
                 instagram: '',
+                linkedin: 'https://www.linkedin.com/in/kunjcr2/',
+                website: 'https://kunjcr2.github.io/',
                 icon: <CgCrown />,
-            },
-            {
-                name: 'Lance Ruiz',
-                role: 'Marketing Officer',
-                imgSrc: dir_2025_2026 + 'placeholder.png',
-                quote: '',
-                email: '',
-                linktree: '',
-                instagram: '',
-                discord: '',
-                icon: <PiFeatherDuotone />,
             },
             {
                 name: 'Anirudhha',
@@ -97,6 +88,17 @@ export const leadership = [
                 instagram: '',
                 website: '',
                 icon: <GrMoney />,
+            },
+            {
+                name: 'Lance Ruiz',
+                role: 'Marketing Officer',
+                imgSrc: dir_2025_2026 + 'placeholder.png',
+                quote: '',
+                email: '',
+                linktree: '',
+                instagram: '',
+                discord: '',
+                icon: <PiFeatherDuotone />,
             },
             {
                 name: 'Majeed',
@@ -123,6 +125,20 @@ export const leadership = [
                 email: '',
                 github: '',
                 icon: <BsLightningCharge />,
+            },
+            {
+                name: 'Om Pandya',
+                role: 'Outreach Chair',
+                imgSrc: dir_2025_2026 + 'placeholder.png',
+                quote: '',
+                email: '',
+                linktree: '',
+                instagram: '',
+                discord: '',
+                github: '',
+                linkedin: 'https://www.linkedin.com/in/om-pandya-9a5014272/',
+                website: '',
+                icon: <PiMegaphoneSimpleBold />,
             },
             
             // 'Luis J. Prado': {
