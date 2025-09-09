@@ -266,8 +266,10 @@ function MinorLeaderCard({ details, index }: { details: MinorLeaderCardType, ind
             }
             transition={{ duration: 1.3, delay: index * 0.45, ease: 'easeOut' }}
             className={`${isAnimating && 'pointer-events-none'} w-[256px] hover:z-20 relative leading-[21px] opacity-0 hover:w-[280px] border-b border-neutral-800 border-1 transition-all duration-300 rounded-xl select-none shadow-sm hover:shadow-lg ${details.color_complex} bg-gradient-to-b to-transparent`}
-            key={details.title}
-        >
+            key={details.title} >
+
+
+
             {/* Role and Name of Person */}
             <div className='rounded-xl p-3'>
                 <div className='absolute text-xl'>{details.icon}</div>
@@ -360,7 +362,7 @@ export function Leadership() {
                                 <div className={currentPage == index ? 'block' : 'hidden'} key={section.toString()}>
 
                                     {/* Major Leadership Role Cards */}
-                                    <div className='flex flex-row flex-wrap justify-center align-middle gap-x-4 sm:gap-x-7 gap-y-[18px] group/majorcards'>
+                                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center items-center place-content-center gap-x-4 sm:gap-x-7 gap-y-[18px] group/majorcards max-w-[1200px] mx-auto'>
                                         {section.major.map(
                                             (details, index) => (
                                                 <MajorLeaderCard

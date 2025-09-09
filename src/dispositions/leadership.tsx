@@ -27,11 +27,12 @@ import { LuConstruction } from 'react-icons/lu'
 import { AiOutlineGlobal } from 'react-icons/ai'
 import { MdOutlineEmojiEvents } from 'react-icons/md'
 
-import { PiFeatherDuotone, PiHandshakeBold } from 'react-icons/pi'
+import { PiFeatherDuotone, PiHandshakeBold, PiMegaphoneSimpleBold } from 'react-icons/pi'
 
 const dir_leaderPortraits = '/assets/home/leader_portraits/'
 const dir_2023_2024 = dir_leaderPortraits + '2023_2024/'
 const dir_2024_2025 = dir_leaderPortraits + '2024_2025/'
+const dir_2025_2026 = dir_leaderPortraits + '2025_2026/'
 
 const pfp_none = dir_leaderPortraits + 'noprofile.webp'
 
@@ -44,53 +45,44 @@ export const FALLBACK_QUOTE = (
 export const leadership = [
 
     {
-        title: '2024 — 2025',
+        title: '2025',
         major: [
             {
-                name: '-',
+                name: 'Aneesh Kumar',
                 role: 'President',
-                imgSrc: pfp_none,
+                imgSrc: dir_2025_2026 + 'aneesh.png',
                 quote: '',
-                email: 'mailto:president+website@skycs.club',
-                linktree: 'https://www.linktr.ee/devalto',
+                email: '',
+                linktree: '',
                 instagram: '',
-                discord: 'https://discordapp.com/users/168406210687533056',
-                github: 'https://www.github.com/dev-alto',
-                linkedin: 'https://www.linkedin.com/in/lance-ruiz',
-                website: 'https://lanceruiz.com',
+                discord: '',
+                github: '',
+                linkedin: 'https://www.linkedin.com/in/aneesh6214/',
+                website: 'https://www.aneeshkumar.net/',
                 icon: <BiCrown />,
             },
             {
-                name: 'Jonnald Hernandez',
-                role: 'Vice-President',
-                imgSrc: pfp_none,
+                name: 'Kunj Shah',
+                role: 'Vice President',
+                imgSrc: dir_2025_2026 + 'kunj.jpg',
                 quote: '',
-                email: 'mailto:vicepresident+website@skycs.club',
-                discord: 'https://discordapp.com/users/188163620826382336',
+                email: '',
+                discord: '',
                 linktree: '',
                 github: '',
                 instagram: '',
+                linkedin: 'https://www.linkedin.com/in/kunjcr2/',
+                website: 'https://kunjcr2.github.io/',
                 icon: <CgCrown />,
             },
             {
-                name: 'Yuting Duan',
-                role: 'Secretary',
-                imgSrc: pfp_none,
-                quote: '',
-                email: 'mailto:secretary+website@skycs.club',
-                linktree: '',
-                instagram: '',
-                discord: 'https://discordapp.com/users/1068781129370439720',
-                icon: <PiFeatherDuotone />,
-            },
-            {
-                name: 'Oscar Meza',
+                name: 'Anirudhha',
                 role: 'Treasurer',
-                imgSrc: pfp_none,
+                imgSrc: dir_2025_2026 + 'placeholder.png',
                 quote: '',
-                email: 'mailto:treasurer+website@skycs.club',
+                email: '',
                 linktree: '',
-                discord: 'https://discordapp.com/users/312818081229701124',
+                discord: '',
                 github: '',
                 linkedin: '',
                 instagram: '',
@@ -98,84 +90,55 @@ export const leadership = [
                 icon: <GrMoney />,
             },
             {
-                name: '-',
-                role: 'Marketing & Outreach',
-                imgSrc: pfp_none,
-                quote: '"The human brain, such an enigma." - Majed',
+                name: 'Lance Ruiz',
+                role: 'Marketing Officer',
+                imgSrc: dir_2025_2026 + 'placeholder.png',
+                quote: '',
+                email: '',
                 linktree: '',
-                email: 'mailto:projectmanager+website@skycs.club',
                 instagram: '',
-                discord: 'https://discordapp.com/users/853343486756388944',
+                discord: '',
+                icon: <PiFeatherDuotone />,
+            },
+            {
+                name: 'Majeed',
+                role: 'Technical Officer',
+                imgSrc: dir_2025_2026 + 'placeholder.png',
+                quote: '',
+                linktree: '',
+                email: '',
+                instagram: '',
+                discord: '',
                 github: '',
                 linkedin: '',
                 website: '',
-                icon: <LuConstruction />,
+                icon: <BsLightningCharge />,
             },
             {
-                name: 'Majed Elqossari',
-                role: 'Associate Project Manager',
-                imgSrc: pfp_none,
-                quote: '"Strive always to excel in virtue and truth." - Prophet Muhammed',
-                github: 'https://www.github.com/CptnMaj',
-                email: 'mailto:assocprojectmanager+website@skycs.club',
-                instagram: 'https://www.instagram.com/majidali.77',
-                discord: 'https://discordapp.com/users/928831417734004746',
-                linkedin: 'https://www.linkedin.com/in/majedelqossari/',
-                icon: <LuConstruction />,
-            },
-            {
-                name: 'Amapola Garcia-Gomez',
-                role: 'Social Outreach Coordinator',
-                imgSrc: pfp_none,
-                quote: '"You can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future." - Steve Jobs',
-                discord: 'https://discordapp.com/users/711984995387965513',
-                linkedin: 'www.linkedin.com/in/amapolagarcia',
-                instagram: 'https://www.instagram.com/amapolabear_/',
-                email: 'mailto:skylinecompsciclub+website@gmail.com',
+                name: 'Derek Ye',
+                role: 'Technical Officer',
+                imgSrc: dir_2025_2026 + 'placeholder.png',
+                quote: '',
+                discord: '',
+                linkedin: '',
+                instagram: '',
+                email: '',
                 github: '',
-                icon: <IoShareSocialOutline />,
+                icon: <BsLightningCharge />,
             },
             {
-                name: 'Denise Hum',
-                role: 'Chapter Faculty Advisor',
-                imgSrc: pfp_none,
-                quote: 'Data are summaries of thousands of stories. Tell a few of those stories to help make the data meaningful.',
+                name: 'Om Pandya',
+                role: 'Outreach Chair',
+                imgSrc: dir_2025_2026 + 'placeholder.png',
+                quote: '',
+                email: '',
                 linktree: '',
-                email: 'mailto:humd+website@smccd.edu',
-                discord: 'https://discordapp.com/users/735277805662765066',
+                instagram: '',
+                discord: '',
                 github: '',
-                linkedin: 'https://www.linkedin.com/in/denisehum/',
-                icon: <PiHandshakeBold />,
-            },
-            {
-                name: 'Lynn Aung',
-                role: 'Chapter Technologist',
-                imgSrc: pfp_none,
-                quote: '"The only time I look down is when I tie my shoe." - Lynn Aung',
-                discord: 'https://discordapp.com/users/1134930369230147685',
-                github: 'https://github.com/loofsan',
-                email: 'mailto:technologists+website@skycs.club',
-                icon: <BsLightningCharge />,
-            },
-            {
-                name: 'Rea Angela Vera Cruz',
-                role: 'Chapter Technologist',
-                imgSrc: pfp_none,
-                quote: '',
-                email: 'mailto:technologists+website@skycs.club',
-                discord: 'https://discordapp.com/users/115633349237669890',
-                github: '',
-                icon: <BsLightningCharge />,
-            },
-            {
-                name: 'Michael Tse',
-                role: 'Chapter Technologist',
-                imgSrc: pfp_none,
-                quote: '',
-                email: 'mailto:technologists+website@skycs.club',
-                discord: 'https://discordapp.com/users/396563683255517194',
-                github: '',
-                icon: <BsLightningCharge />,
+                linkedin: 'https://www.linkedin.com/in/om-pandya-9a5014272/',
+                website: '',
+                icon: <PiMegaphoneSimpleBold />,
             },
             
             // 'Luis J. Prado': {
@@ -198,7 +161,11 @@ export const leadership = [
             //     icon: <></>,
             // }
         ],
+
+        
+
         minor: [
+            /*
             {
                 title: 'Web Master',
                 label: 'Lance Ruiz',
@@ -217,7 +184,11 @@ export const leadership = [
                 color_complex: 'from-[#9c710c] shadow-[#9c710c]',
                 icon: <MdOutlineEmojiEvents />,
             },
+            */
         ],
+
+    
+
     },
     
 ]
