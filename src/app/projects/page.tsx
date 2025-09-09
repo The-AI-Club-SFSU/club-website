@@ -48,8 +48,9 @@ export default function Projects(): React.ReactNode {
                 <div className='text-center'>
                     <p className='text-neutral-400 mb-4'>Want to contribute to our projects?</p>
                     <a 
-                        href='https://discord.gg/tDtqmP5sGt' 
-                        target='_blank'
+                        href="https://discord.gg/tDtqmP5sGt" 
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className='inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold rounded-lg transition-all duration-200 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl'
                     >
                         Join Our Discord
