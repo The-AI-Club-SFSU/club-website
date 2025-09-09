@@ -93,14 +93,14 @@ export function Navbar(): React.ReactNode {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 1, ease: 'easeOut' }}
             >
-                <Link href='/' className='z-10 absolute left-0 flex items-center justify-center gap-x-2 drop-shadow-lg ml-4 hover:animate-pulse duration-500'>
+                <Link href='/' className='z-10 absolute left-0 group flex items-center justify-center gap-x-2 drop-shadow-lg ml-4 hover:animate-pulse duration-500'>
                     <Image
                         width={48}
                         height={48}
                         src={'/assets/bits/ai_club_logo_bot.webp'}
                         alt=''
                     />
-                    <p className='font-bold title-main'>The AI Club</p>
+                    <p className='font-bold title-main text-neutral-300 group-hover:text-white transition-all'>The AI Club</p>
                 </Link>
 
                 {/* Navigation button row */}
