@@ -332,7 +332,7 @@ export function Leadership() {
                 <div className='flex flex-col items-center'>
                     <ReactTyped
                         className='title-main w-full text-center text-3xl sm:text-4xl font-semibold'
-                        strings={['Our Leadership']}
+                        strings={['Our Active Leadership']}
                         typeSpeed={75}
                         startWhenVisible
                     />
@@ -379,7 +379,7 @@ export function Leadership() {
                                         {section.minor.map(
                                             (details, index) => (
                                                 <MinorLeaderCard
-                                                    key={details.toString()}
+                                                    key={index}
                                                     index={index}
                                                     details={details}
                                                 />
