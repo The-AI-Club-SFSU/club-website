@@ -332,7 +332,7 @@ export function Leadership() {
                                 <div className={currentPage == index ? 'block' : 'hidden'} key={section.toString()}>
 
                                     {/* Major Leadership Role Cards */}
-                                    <div className='flex flex-row flex-wrap justify-center align-middle gap-x-4 sm:gap-x-7 gap-y-[18px] group/majorcards'>
+                                    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center items-center place-content-center gap-x-4 sm:gap-x-7 gap-y-[18px] group/majorcards max-w-[1200px] mx-auto'>
                                         {section.major.map(
                                             (details, index) => (
                                                 <MajorLeaderCard

@@ -27,11 +27,12 @@ import { LuConstruction } from 'react-icons/lu'
 import { AiOutlineGlobal } from 'react-icons/ai'
 import { MdOutlineEmojiEvents } from 'react-icons/md'
 
-import { PiFeatherDuotone, PiHandshakeBold } from 'react-icons/pi'
+import { PiFeatherDuotone, PiHandshakeBold, PiMegaphoneSimpleBold } from 'react-icons/pi'
 
 const dir_leaderPortraits = '/assets/home/leader_portraits/'
 const dir_2023_2024 = dir_leaderPortraits + '2023_2024/'
 const dir_2024_2025 = dir_leaderPortraits + '2024_2025/'
+const dir_2025_2026 = dir_leaderPortraits + '2025_2026/'
 
 const pfp_none = dir_leaderPortraits + 'noprofile.webp'
 
@@ -49,44 +50,35 @@ export const leadership = [
             {
                 name: 'Aneesh Kumar',
                 role: 'President',
-                imgSrc:  '',
+                imgSrc: dir_2025_2026 + 'aneesh.png',
                 quote: '',
                 email: '',
                 linktree: '',
                 instagram: '',
                 discord: '',
                 github: '',
-                linkedin: '',
-                website: '',
+                linkedin: 'https://www.linkedin.com/in/aneesh6214/',
+                website: 'https://www.aneeshkumar.net/',
                 icon: <BiCrown />,
             },
             {
                 name: 'Kunj Shah',
                 role: 'Vice President',
-                imgSrc: '',
+                imgSrc: dir_2025_2026 + 'kunj.jpg',
                 quote: '',
                 email: '',
                 discord: '',
                 linktree: '',
                 github: '',
                 instagram: '',
+                linkedin: 'https://www.linkedin.com/in/kunjcr2/',
+                website: 'https://kunjcr2.github.io/',
                 icon: <CgCrown />,
             },
             {
-                name: 'Lance Ruiz',
-                role: 'Marketing Officer',
-                imgSrc: '',
-                quote: '',
-                email: '',
-                linktree: '',
-                instagram: '',
-                discord: '',
-                icon: <PiFeatherDuotone />,
-            },
-            {
                 name: 'Anirudhha',
-                role: '-',
-                imgSrc: '',
+                role: 'Treasurer',
+                imgSrc: dir_2025_2026 + 'placeholder.png',
                 quote: '',
                 email: '',
                 linktree: '',
@@ -98,9 +90,20 @@ export const leadership = [
                 icon: <GrMoney />,
             },
             {
+                name: 'Lance Ruiz',
+                role: 'Marketing Officer',
+                imgSrc: dir_2025_2026 + 'placeholder.png',
+                quote: '',
+                email: '',
+                linktree: '',
+                instagram: '',
+                discord: '',
+                icon: <PiFeatherDuotone />,
+            },
+            {
                 name: 'Majeed',
-                role: 'Tech Officer',
-                imgSrc: '',
+                role: 'Technical Officer',
+                imgSrc: dir_2025_2026 + 'placeholder.png',
                 quote: '',
                 linktree: '',
                 email: '',
@@ -109,31 +112,33 @@ export const leadership = [
                 github: '',
                 linkedin: '',
                 website: '',
-                icon: '',
-            },
-            {
-                name: 'Ronin',
-                role: '-',
-                imgSrc: '',
-                quote: '',
-                github: '',
-                email: '',
-                instagram: '',
-                discord: '',
-                linkedin: '',
-                icon: '',
+                icon: <BsLightningCharge />,
             },
             {
                 name: 'Derek Ye',
-                role: 'Tech Officer',
-                imgSrc: '',
+                role: 'Technical Officer',
+                imgSrc: dir_2025_2026 + 'placeholder.png',
                 quote: '',
                 discord: '',
                 linkedin: '',
                 instagram: '',
                 email: '',
                 github: '',
-                icon: '',
+                icon: <BsLightningCharge />,
+            },
+            {
+                name: 'Om Pandya',
+                role: 'Outreach Chair',
+                imgSrc: dir_2025_2026 + 'placeholder.png',
+                quote: '',
+                email: '',
+                linktree: '',
+                instagram: '',
+                discord: '',
+                github: '',
+                linkedin: 'https://www.linkedin.com/in/om-pandya-9a5014272/',
+                website: '',
+                icon: <PiMegaphoneSimpleBold />,
             },
             
             // 'Luis J. Prado': {

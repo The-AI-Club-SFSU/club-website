@@ -49,17 +49,20 @@ export function Recruitment(): React.ReactNode {
                     </h1>
                 </div>
 
-                <iframe src="https://e.widgetbot.io/channels/939701223144185867/939714632929665034" 
-                    allow="clipboard-write; fullscreen" 
-                    height="600"
-                    className='rounded-2xl drop-shadow-[0_0_20px_rgba(0,0,0,0.5)]'
-                    width="75%">
+                <iframe 
+                    src="https://discord.com/widget?id=1158487598508027948&theme=dark" 
+                    width="75%" 
+                    height="500" 
+                    allowTransparency={true} 
+                    frameBorder="0" 
+                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                    className='rounded-2xl drop-shadow-[0_0_20px_rgba(0,0,0,0.5)]'>
                 </iframe>
 
-                <a href='https://discord.com/invite/z5P9kccwRh' target='_blank' className='w-[75%] h-[72px] hover:scale-[101%] hover:animate-pulse transition-all opacity-70 hover:opacity-85 duration-300'>
+                <a href='https://discord.gg/tDtqmP5sGt' target='_blank' className='w-[75%] h-[72px] hover:scale-[101%] hover:animate-pulse transition-all opacity-70 hover:opacity-85 duration-300'>
                     <iframe
                         title='discord'
-                        src='https://ptb.discord.com/widget?id=939701223144185867&theme=dark'
+                        src='https://ptb.discord.com/widget?id=1158487598508027948&theme=dark'
                         width='100%'
                         height='72'
                         className='rounded-2xl pointer-events-none '
