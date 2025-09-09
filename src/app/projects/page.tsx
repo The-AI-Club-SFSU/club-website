@@ -33,7 +33,7 @@ export default function Projects(): React.ReactNode {
                 
                 {/* Subtitle */}
                 <p className='text-xl md:text-2xl text-neutral-300 text-center max-w-2xl mb-8 leading-relaxed'>
-                    We're working on showcasing our amazing AI projects and student innovations. 
+                    We&apos;re working on showcasing our amazing AI projects and student innovations. 
                     Stay tuned for exciting developments!
                 </p>
                 
