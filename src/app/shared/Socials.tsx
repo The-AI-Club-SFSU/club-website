@@ -62,7 +62,7 @@ export default function Socials() {
                 </Link>
 
                 <Link
-                    href='mailto:a@gmail.com'
+                    href='mailto:sfsuaiclub+websitecontact@gmail.com'
                     target='_blank'
                 >
                     <button className='flex group w-[160px] sm:w-[180px] sm:hover:w-[220px] justify-center bg-lime-700/15 bg-opacity-80 rounded-md gap-2 py-3 2 active:scale-95 hover:bg-lime-600 hover:outline-4 hover:text-white text-xl font-bold active:outline-2 hover:outline-double border-neutral-800 hover:outline-lime-700 active:outline-neutral-200 duration-200 active:duration-200'>
