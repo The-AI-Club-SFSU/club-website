@@ -113,18 +113,35 @@ export function InfoHub(): React.ReactNode {
                             {/* <span>
                                 <Image src='/assets/bits/kits/kitty_read.png' height={32} width={32} className='mr-3 mt-1' alt='' />
                             </span> */}
-                            Resource Hub
+                            Community
                         </h1>
                         <h2 className='text-neutral-400'>Stay connected with our community!</h2>
                         <div className='w-full h-[1px] bg-neutral-400 my-3' />
-                        <div className='flex flex-row flex-wrap justify-end font-semibold gap-x-2 gap-y-2'>
+
+                            <div className='flex flex-col gap-y-3 text-neutral-300'>
+                                <p>We use Discord as our primary hub for communication and resources. Join to stay up to date with events, discussions, and the community.</p>
+                                <a href='https://discord.gg/tDtqmP5sGt' target='_blank' className='inline-flex items-center justify-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg transition-colors duration-200 hover:px-12'>
+                                    🚀 Join Our Discord Community
+                                </a>
+                            </div>
+
+                            {/* <div className='flex flex-row flex-wrap justify-end font-semibold gap-x-2 gap-y-2'>
+                                <Link
+                                    href='/'
+                                    target='_blank'
+                                    className='flex flex-row items-center group px-3 sm:hover:px-5 py-2 bg-pink-950 bg-opacity-60 hover:bg-opacity-80 transition-all rounded-lg gap-x-2'
+                                >
+                                    <PiToiletPaperDuotone className='group-hover:text-lg'/>Placeholder Resource
+                                </Link>
+                            </div> */}
+                        {/* <div className='flex flex-row flex-wrap justify-end font-semibold gap-x-2 gap-y-2'>
                             <Link
                                 href='/'
                                 target='_blank'
                                 className='flex flex-row items-center group px-3 sm:hover:px-5 py-2 bg-pink-950 bg-opacity-60 hover:bg-opacity-80 transition-all rounded-lg gap-x-2'
                             >
                                 <PiToiletPaperDuotone className='group-hover:text-lg'/>Placeholder Resource
-                            </Link>
+                            </Link> */}
                             {/* <Link 
                                 href='https://docs.google.com/document/d/1zQNKe-yL5rwGuMRI5siLUNC_SKyXT70c4yooRSxzPZ8/edit?usp=sharing'
                                 target='_blank'
@@ -143,7 +160,7 @@ export function InfoHub(): React.ReactNode {
                                 className='flex flex-row items-center group px-3 sm:hover:px-5 py-2 bg-yellow-950 bg-opacity-60 hover:bg-opacity-80 transition-all rounded-lg gap-x-2'>
                                 <SiGithub className='group-hover:text-lg'/>Join our GitHub Organization
                             </Link> */}
-                        </div>
+                        {/* </div> */}
                     </div>
 
                 </div>
