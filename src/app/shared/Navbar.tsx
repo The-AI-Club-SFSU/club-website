@@ -94,13 +94,23 @@ export function Navbar(): React.ReactNode {
                 transition={{ duration: 1, delay: 1, ease: 'easeOut' }}
             >
                 <Link href='/' className='z-10 absolute left-0 group flex items-center justify-center gap-x-2 drop-shadow-lg ml-4 hover:animate-pulse duration-500'>
+                    {/* mobile only variant */}
+                    <Image
+                        width={48}
+                        height={48}
+                        src={'/assets/bits/ai_club_logo.webp'}
+                        alt=''
+                        className='inline sm:hidden'
+                    />
+                    {/* larger screens */}
                     <Image
                         width={48}
                         height={48}
                         src={'/assets/bits/ai_club_logo_bot.webp'}
                         alt=''
+                        className='hidden sm:inline'
                     />
-                    <p className='font-bold title-main text-neutral-300 group-hover:text-white transition-all'>The AI Club</p>
+                    <p className='hidden sm:inline font-bold title-main text-neutral-300 group-hover:text-white transition-all'>The AI Club</p>
                 </Link>
 
                 {/* Navigation button row */}
@@ -154,7 +164,9 @@ export function Navbar(): React.ReactNode {
                             : 'absolute md:hidden top-0 left-0 w-full h-screen bg-neutral-900/95 flex flex-col justify-center items-center'
                     }
                 >
-                    <div className='flex flex-col gap-4 font-semibold text-2xl'>
+                    
+                    <div className='z-10 title-main flex flex-col gap-4 font-semibold text-2xl'>
+                        
                         <Link
                             href='/'
                             // FIX:
@@ -163,27 +175,28 @@ export function Navbar(): React.ReactNode {
                             //     handleClick()
                             // }}
                         >
-                            <div className='p-3 hover:px-5 flex bg-neutral-950/25 hover:bg-neutral-700/50 rounded-lg transition-all'>
+                            <div className='flex px-16 py-3 bg-neutral-950/25 hover:bg-neutral-700/50 rounded-lg transition-all'>
                                 <GoHome className='my-auto mr-2' />
                                 Home
                             </div>
                         </Link>
 
                         <Link href='./projects' onMouseUp={handleClick}>
-                            <div className='p-3 hover:px-5 flex bg-neutral-950/25 hover:bg-neutral-700/50 rounded-lg transition-all'>
-                                <FiTool className='my-auto mr-2' />
+                            <div className='flex px-16 py-3 bg-neutral-950/25 hover:bg-neutral-700/50 rounded-lg transition-all'>
+                                <FiTool className='my-auto mr-2 text-lime-300' />
                                 Projects
                             </div>
                         </Link>
 
                         <Link href='https://discord.gg/tDtqmP5sGt' onMouseUp={handleClick}>
-                            <div className='p-3 hover:px-5 flex bg-neutral-950/25 hover:bg-pink-400/30 rounded-lg transition-all'>
+                            <div className='flex px-16 py-3 bg-neutral-950/25 hover:bg-pink-400/30 rounded-lg transition-all'>
                                 <GoCodeOfConduct className='my-auto mr-2 text-pink-300' />
                                 Join Us!
                             </div>
                         </Link>
 
                     </div>
+                    <div className='absolute w-full h-full bg-black/5 backdrop-blur-sm'></div>
                 </div>
             </motion.div>
         </nav>
