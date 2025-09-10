@@ -1,7 +1,6 @@
 'use client'
 
 import { useRef, useState } from 'react'
-// import { Element } from 'react-scroll'
 
 import { motion, useInView } from 'framer-motion'
 import { useSound } from 'use-sound'
@@ -24,8 +23,7 @@ export function About(): React.ReactNode {
     const [card3Animating, setCard3Animating] = useState(false)
 
     return (
-        <div ref={ref} className='w-full h-full bg-gradient-to-b from-black to-[#0a0a0a] text-gray-300 py-[24vh] mt-40 overflow-hidden'>
-            {/* <Element name='about' /> */}
+        <section ref={ref} className='w-full h-full bg-gradient-to-b from-black to-[#0a0a0a] text-gray-300 py-[24vh] mt-40 overflow-hidden'>
 
             <div className='w-full max-w-[2600px] mx-auto py-24 flex flex-col lg:flex-row justify-center items-center gap-x-20 gap-y-8 bg-[#030303]'>
             
@@ -279,6 +277,6 @@ export function About(): React.ReactNode {
                 </div>
                 <p className='m-4 lg:hidden font-semibold text-neutral-400 animate-pulse'>drag to view cards →</p>
             </div>
-        </div>
+        </section>
     )
 }

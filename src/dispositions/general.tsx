@@ -13,8 +13,8 @@ export const INFOHUB_MEETING_LOCATION_LINK: string = 'https://maps.app.goo.gl/bj
 
 export const INFOHUB_ANNOUNCEMENT: React.ReactNode = (
     <>
-        <p>We host AI workshops, community events, and guided discussions on ethical and technical topics.</p>
-        <p>We help prepare students for careers in AI development and research.</p>
-        <p className='font-semibold'>And most importantly, we have an awesome time doing this.</p>
+        <p>We host AI 🛠️ workshops, 🎉 community events, and 💬 guided discussions on ethical and technical topics.</p>
+        <p>We also help prepare students for careers in AI development and research.</p>
+        <p className='font-semibold'>And!—most importantly—all whilst having an awesome time! 🥳</p>
     </>
 )

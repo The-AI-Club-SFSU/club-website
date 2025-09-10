@@ -1,11 +1,10 @@
 'use client'
 
-// import { Element } from 'react-scroll'
 import Image from 'next/image'
 
 export function Recruitment(): React.ReactNode {
     return (
-        <div className='w-full h-[220vh] relative overflow-hidden'>
+        <section className='w-full h-[220vh] relative overflow-hidden'>
             {/* top        */}
             <div className='absolute top-0 w-full h-[15%] bg-gradient-to-b from-black to-transparent' />
             {/* bottom     */}
@@ -71,9 +70,7 @@ export function Recruitment(): React.ReactNode {
                     <p className='font-semibold mt-2 ml-2'>👉 Click to join us!</p>
                 </a>
 
-                {/* <Element name='recruitment' /> */}
-
             </div>
-        </div>
+        </section>
     )
 }

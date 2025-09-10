@@ -1,34 +1,40 @@
 import Link from 'next/link'
 import Image from 'next/image'
+
 import Socials from './Socials'
 
 export function Footer() {
     return (
         <footer className='w-full bg-gradient-to-b from-neutral-800 dark:from-neutral-950 to-neutral-950 dark:to-black text-lg font-semibold pt-4 text-center'>
 
-            <p className='text-lg'>🤝</p>
-            <p className='title-main font-semibold text-xl'>Let&apos;s connect.</p>
-            <p className='title-main text-neutral-500 font-semibold'>Expand your professional network with us.</p>
-
             <Socials/ >
 
-            <div className='flex flex-row items-center justify-center gap-4 py-2 w-full'>
-                <Link href='https://www.sfsu.edu' target='_blank'>
+            {/* padding */}
+            <div className='h-16' />
+
+            <div className='flex flex-row items-center justify-center gap-8 py-2 w-full'>
+
+                {/* SFSU banner */}
+                <Link href='https://www.sfsu.edu' target='_blank' className='flex flex-col gap-2'>
+                    <p className='text-left'>A student organization of</p>
                     <Image
                         src={'/assets/bits/sfsu_wordmark.png'}
                         width={256}
-                        height={128}
-                        alt=''
+                        height={128} 
+                        alt='SFSU Wordmark (links to official website)'
                     />
                 </Link>
-                {/* <Link href='https://smccd.edu/' target='_blank'>
+
+                {/* potentially add ACM @ SFSU specific logo here; currently using generic ACM logo */}
+                <Link href='https://sfsuacm.org' target='_blank'>
                     <Image
-                        src={'/assets/bits/smccd_brand.png'}
-                        width={256}
-                        height={128}
-                        alt=''
+                        src={'/assets/bits/acm.png'}
+                        width={100}
+                        height={100}
+                        alt='ACM Logo (links to official website)'
                     />
-                </Link> */}
+                </Link>
+
             </div>
 
             <div className='pt-4 pb-10'>
@@ -38,9 +44,10 @@ export function Footer() {
                     </p>
                 </Link>
                 <p className='text-neutral-500 text-sm sm:text-lg'>
-                    Copyright ©️ The Artificial Intelligence Club @ SFSU 2022-2025
+                    Copyright ©️ The Artificial Intelligence Club @ SFSU 2023-2025
                 </p>
             </div>
+
         </footer>
     )
 }

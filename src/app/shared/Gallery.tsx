@@ -80,7 +80,7 @@ export function Gallery({
     album: Array<GalleryPiece>
 }): React.ReactNode {
     return (
-        <div className='z-50 flex flex-wrap w-full group py-16 px-1 pb-[400px] overflow-hidden'>
+        <section className='flex flex-wrap w-full group py-16 px-1 pb-[400px] overflow-hidden'>
             {album.map((pieceDetails, index) => (
                 <GalleryPiece
                     key={pieceDetails.toString()}
@@ -88,6 +88,6 @@ export function Gallery({
                     index={index}
                 />
             ))}
-        </div>
+        </section>
     )
 }

@@ -1,7 +1,6 @@
 'use client'
 
-import React, { useRef, useState } from 'react'
-// import { Element } from 'react-scroll'
+import React, { ReactNode, useRef, useState } from 'react'
 import { ReactTyped } from 'react-typed'
 
 import { motion, useInView } from 'framer-motion'
@@ -19,12 +18,35 @@ import {
 import {
     CgArrowRightR
 } from 'react-icons/cg'
-import { MdOutlineMail } from 'react-icons/md';
+import { MdOutlineMail } from 'react-icons/md'
 import { FaGlobeAmericas, FaQuoteLeft } from 'react-icons/fa'
 
-const { leadership, FALLBACK_QUOTE } = require('@/dispositions/leadership.tsx')
+import leadership, { FALLBACK_QUOTE } from '@/dispositions/leadership'
+import Link from 'next/link'
 
-function MajorLeaderCard ({ details, index }) {
+interface MajorLeaderCardType {
+    quote: string
+    icon: ReactNode
+    imgSrc: string
+    name: string
+    role: string
+    email?: string
+    linktree?: string
+    github?: string
+    instagram?: string
+    discord?: string
+    linkedin?: string
+    website?: string
+}
+
+interface MinorLeaderCardType {
+    title: string
+    label: string
+    icon: ReactNode
+    color_complex: string
+}
+
+function MajorLeaderCard ({ details, index }: { details: MajorLeaderCardType, index: number }) {
     const [playSfx_clunk] = useSound('/assets/audio/clunk.mp3')
     const [playSfx_hoverThunk] = useSound('/assets/audio/muffled_hover_thunk.mp3')
     const [playSfx_discorda] = useSound('/assets/audio/discorda.mp3')
@@ -52,7 +74,7 @@ function MajorLeaderCard ({ details, index }) {
             transition={{ duration: 1.25, delay: index * 0.15, ease: 'easeOut' }}
             // w-[200px] sm:w-[240px]
             className={`${isAnimating && 'pointer-events-none'} hover:z-20 sm:hover:mx-4 w-[220px] sm:w-[270px] ring-2 ring-green-950 relative group/majorcard hover:rounded-b-none sm:hover:!scale-[115%] transition-all duration-500 select-none rounded-t-xl rounded-b-lg bg-gradient-to-t from-[#040404] via-green-950 to-green-950 shadow-md hover:shadow-2xl shadow-black hover:shadow-green-300`}
-            key={details.leaderName}
+            key={details.name}
         >
             {/* Leader Portrait + Leader Quote Overlay */}
             <div
@@ -125,55 +147,55 @@ function MajorLeaderCard ({ details, index }) {
                 className='z-10 absolute hidden group-hover/majorcard:flex border-b-4 border-green-700 justify-center w-full rounded-b-lg bg-gradient-to-b from-[#040a04] to-black gap-2 px-2 pb-2'
             >
                 {details.email ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.email}
                         target='_blank'
                         rel='noreferrer'
                     >
                         <MdOutlineMail size={'3vh'} className='h-10' />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
                 {details.linktree ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.linktree}
                         target='_blank'
                         rel='noreferrer'
                     >
                         <SiLinktree size={'3vh'} className='h-10' />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
                 {details.github ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.github}
                         target='_blank'
                         rel='noreferrer'
                     >
                         <SiGithub size={'3vh'} className='h-10' />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
                 {details.instagram ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.instagram}
                         target='_blank'
                         rel='noreferrer'
                     >
                         <SiInstagram size={'3vh'} className='h-10' />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
                 {details.discord ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.discord}
                         target='_blank'
@@ -184,31 +206,31 @@ function MajorLeaderCard ({ details, index }) {
                             size={'3vh'}
                             className='h-10'
                         />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
                 {details.linkedin ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.linkedin}
                         target='_blank'
                         rel='noreferrer'
                     >
                         <SiLinkedin size={'3vh'} className='h-10' />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
                 {details.website ? (
-                    <a
+                    <Link
                         className='hover:scale-110 active:scale-90 active:opacity-90 transition duration-200 ease-out'
                         href={details.website}
                         target='_blank'
                         rel='noreferrer'
                     >
                         <FaGlobeAmericas size={'3vh'} className='h-10' />
-                    </a>
+                    </Link>
                 ) : (
                     <></>
                 )}
@@ -219,7 +241,8 @@ function MajorLeaderCard ({ details, index }) {
 
 
 
-function MinorLeaderCard({ details, index }) {
+
+function MinorLeaderCard({ details, index }: { details: MinorLeaderCardType, index: number }) {
     const [playSfx_hoverThunk] = useSound('/assets/audio/muffled_hover_thunk.mp3')
 
     const [isAnimating, setIsAnimating] = useState(false)
@@ -268,10 +291,16 @@ export function Leadership() {
     const [currentPage, setCurrentPage] = useState(0)
 
     return (
-        <div className='w-full h-full flex justify-center items-center pb-40 bg-gradient-to-b from-black via-[#031302] to-black'>
-            {/* <Element name='leadership' /> */}
+        <section className='w-full h-full flex justify-center items-center pb-40 bg-gradient-to-b from-black via-[#031302] to-black'>
 
             <div className='max-w-[1400px] flex flex-col justify-center items-center w-full h-full py-[44px] px-[10px] gap-4 overflow-x-hidden'>
+
+                <Image
+                    width={80}
+                    height={80}
+                    src={'/assets/bits/ai_club_logo_bot.webp'}
+                    alt=''
+                />
 
                 {/* <div className='flex flex-row mb-[-8px]'>
                     <Image
@@ -303,7 +332,7 @@ export function Leadership() {
                 <div className='flex flex-col items-center'>
                     <ReactTyped
                         className='title-main w-full text-center text-3xl sm:text-4xl font-semibold'
-                        strings={['Our Leadership']}
+                        strings={['Our Active Leadership']}
                         typeSpeed={75}
                         startWhenVisible
                     />
@@ -322,6 +351,7 @@ export function Leadership() {
                     
                 </div>
 
+                
                 <div className='flex flex-col gap-y-6'>
 
                     <div className='w-full text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]'></div>
@@ -349,7 +379,7 @@ export function Leadership() {
                                         {section.minor.map(
                                             (details, index) => (
                                                 <MinorLeaderCard
-                                                    key={details.toString()}
+                                                    key={index}
                                                     index={index}
                                                     details={details}
                                                 />
@@ -361,15 +391,11 @@ export function Leadership() {
                         )}
                     </div>
 
-                    {/* <p className='px-6 title-main text-neutral-700 text-center font-semibold'>
-                        pssst! past Leadership will be shown soon!~our history books.
-                    </p> */}
-
                     <div className='w-full text-4xl font-semibold border-b-2 border-[#345222] drop-shadow-[0_0_30px_rgba(50,255,50,1)]'></div>
 
                 </div>
             </div>
 
-        </div>
+        </section>
     )
 }

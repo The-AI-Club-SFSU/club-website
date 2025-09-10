@@ -2,9 +2,9 @@
 
 import React from 'react'
 import { ReactTyped } from 'react-typed'
-// import { Element } from 'react-scroll'
 
-import Image from 'next/image'
+// import Image from 'next/image'
+import { Image } from 'shared/Image'
 
 import { IoMdArrowRoundDown } from 'react-icons/io'
 // import { Link } from 'react-scroll'
@@ -27,8 +27,7 @@ export function Hero(): React.ReactNode {
     const isInView = useInView(ref)
 
     return (
-        <div className='w-full h-screen'>
-            {/* <Element name='hero' /> */}
+        <section className='w-full h-screen'>
 
             {/* the hero backdrop */}
             <motion.div
@@ -75,19 +74,18 @@ export function Hero(): React.ReactNode {
             {/* the main hero content */}
             <div className='z-10 absolute w-full h-full title-main text-center flex flex-col items-center justify-center pb-12 gap-y-2'>
                 {/* mascot */}
-                {/* <Image
+                <Image
                     width={80}
                     height={80}
-                    src={'/assets/bits/ai_club_logo.webp'}
+                    src={'/assets/bits/ai_club_logo_bot.webp'}
                     alt=''
-                    unoptimized
-                    className='z-20 hover:scale-105 transition-all duration-300 drop-shadow-[0_0_25px_rgba(255,255,255,0.4)]'
-                /> */}
+                    className='hover:scale-105 transition-all duration-300 '
+                />
 
                 {/* The main texts */}
-                <h1 className='leading-tight'>
-                    <div className='text-[5.2vw] xl:text-[52px] font-bold'>The Artificial Intelligence Club</div>
-                    <div className='text-[4.2vw] xl:text-[36px] text-[#FCD690]'>@ San Francisco State University</div>
+                <h1 className='leading-tight group'>
+                    <div className='text-[5.2vw] xl:text-[52px] font-bold transition-all duration-300 group-hover:drop-shadow-[0_0_4px_rgba(255,255,255,0.6)]'>The Artificial Intelligence Club</div>
+                    <div className='text-[4.2vw] xl:text-[36px] text-[#ffd24f] transition-all duration-500 group-hover:drop-shadow-[0_0_6px_rgba(255,210,79,0.8)]'>@ San Francisco State University</div>
                 </h1>
 
                 <div className='text-[3.25vw] sm:text-xl'>
@@ -140,6 +138,6 @@ export function Hero(): React.ReactNode {
                 <IoMdArrowRoundDown className='text-2xl' />
                 <p className='animate-pulse select-none'>Scroll Down to Enter</p>
             </div>
-        </div>
+        </section>
     )
 }
