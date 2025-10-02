@@ -6,10 +6,12 @@ export const ANNOUNCEMENT_TEXT: string = '🚧 This website is undergoing consta
 export const ANNOUNCEMENT_GRAD_COLOR: string = 'from-[#553E00FF]'
 
 // Overview section for info regarding our meetings
-export const INFOHUB_MEETING_DAY: number = 3 // The day of the week, from [0-6] with 0 being Sunday (3 = Wednesday)
+export const INFOHUB_MEETING_DAY: number = 1 // The day of the week, from [0-6] with 0 being Sunday (1 = Monday)
 export const INFOHUB_MEETING_HOUR: string = '18:00' // Uses 24-hour time format, i.e "12:34" (18:00 = 6pm)
-export const INFOHUB_MEETING_LOCATION: string = 'TBA @ SFSU' // Uses "Building #, Room #-###" format for min ambiguity
-export const INFOHUB_MEETING_LOCATION_LINK: string = 'https://maps.app.goo.gl/bjWJEroRLzsDPYcGA' // URL to a preferrably Google Maps index of our meeting location
+export const INFOHUB_MEETING_LOCATION: string = 'Makerspace (LIB 260)' // Uses "Building #, Room #-###" format for min ambiguity
+export const INFOHUB_MEETING_LOCATION_LINK: string =
+    'https://maps.google.com/?q=Makerspace+(LIB+260)+San+Francisco+State+University' // URL to a preferrably Google Maps index of our meeting location
+export const INFOHUB_FIRST_MEETING_DATE: string = '2025-10-06T18:00:00-07:00'
 
 export const INFOHUB_ANNOUNCEMENT: React.ReactNode = (
     <>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Kickoff workshop energy illustration</title>
+  <desc id="desc">Abstract depiction of brainstorming during the kickoff workshop.</desc>
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#23074D" />
+      <stop offset="100%" stop-color="#CC5333" />
+    </linearGradient>
+    <radialGradient id="idea" cx="30%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#FFFACD" stop-opacity="0.95" />
+      <stop offset="70%" stop-color="#FFD166" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#FFD166" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg3)" rx="48" />
+  <circle cx="420" cy="320" r="280" fill="url(#idea)" />
+  <g stroke="#FFE29A" stroke-width="10" stroke-linecap="round" stroke-dasharray="6 24" opacity="0.75">
+    <path d="M420 120 L420 520" />
+    <path d="M220 320 L620 320" />
+    <path d="M300 190 L540 450" />
+    <path d="M540 190 L300 450" />
+  </g>
+  <g fill="#FFFFFF">
+    <path d="M760 220 h200 a24 24 0 0 1 24 24 v120 a24 24 0 0 1 -24 24 h-120 l-60 72 v-72 h-20 a24 24 0 0 1 -24 -24 v-120 a24 24 0 0 1 24 -24 z" opacity="0.85" />
+    <text x="800" y="305" font-size="48" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700">IDEAS</text>
+    <text x="800" y="360" font-size="28" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="500" fill-opacity="0.85">Brainstorming sparks</text>
+  </g>
+  <g fill="#FFF" opacity="0.9">
+    <text x="150" y="650" font-size="54" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700">Workshop Energy</text>
+    <text x="150" y="705" font-size="30" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="500" fill-opacity="0.85">Creative problem solving during kickoff activities.</text>
+  </g>
+</svg>

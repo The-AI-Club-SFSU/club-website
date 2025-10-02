@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Makerspace collaboration illustration</title>
+  <desc id="desc">Abstract representation of students collaborating in the Makerspace.</desc>
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#101728" />
+      <stop offset="50%" stop-color="#1F4068" />
+      <stop offset="100%" stop-color="#5C7AEA" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg4)" rx="48" />
+  <g fill="none" stroke="#9EC9FF" stroke-width="6" stroke-linejoin="round" opacity="0.8">
+    <path d="M220 260 h760 v280 h-760 z" />
+    <path d="M260 300 h680 v200 h-680 z" />
+    <path d="M340 300 v200" />
+    <path d="M860 300 v200" />
+    <path d="M500 340 l80 -40 80 40" />
+    <path d="M500 460 l80 40 80 -40" />
+  </g>
+  <g fill="#E2F3FF" opacity="0.85">
+    <circle cx="360" cy="400" r="36" />
+    <circle cx="840" cy="400" r="36" />
+    <circle cx="600" cy="360" r="44" />
+    <circle cx="600" cy="460" r="44" />
+  </g>
+  <g fill="#FFFFFF">
+    <text x="160" y="620" font-size="58" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700">Makerspace Vibes</text>
+    <text x="160" y="680" font-size="32" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="500" fill-opacity="0.85">Hands-on collaboration around the work tables.</text>
+  </g>
+</svg>

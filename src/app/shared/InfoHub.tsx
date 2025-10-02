@@ -2,43 +2,41 @@ import React from 'react'
 
 import Link from 'next/link'
 
-import { INFOHUB_MEETING_DAY, INFOHUB_MEETING_HOUR, INFOHUB_MEETING_LOCATION, INFOHUB_MEETING_LOCATION_LINK, INFOHUB_ANNOUNCEMENT } from '@/dispositions/general'
+import {
+    INFOHUB_MEETING_DAY,
+    INFOHUB_MEETING_LOCATION,
+    INFOHUB_MEETING_LOCATION_LINK,
+    INFOHUB_FIRST_MEETING_DATE,
+    INFOHUB_ANNOUNCEMENT,
+} from '@/dispositions/general'
 
 import { PiToiletPaperDuotone } from 'react-icons/pi'
 
 import { Countdown } from 'shared/_modules'
 import Socials from 'shared/Socials'
 
-function getNextBiWeeklyMeeting() {
-    // First meeting is September 17, 2025
-    const firstMeeting = new Date('2025-09-17T18:00:00-07:00')
+function getNextWeeklyMeeting(): Date {
+    const firstMeeting = new Date(INFOHUB_FIRST_MEETING_DATE)
     const currentDate = new Date()
-    
-    // If current date is before first meeting, return first meeting
-    if (currentDate < firstMeeting) {
-        return firstMeeting.toLocaleDateString()
+
+    if (currentDate <= firstMeeting) {
+        return firstMeeting
     }
-    
-    // Calculate weeks since first meeting
-    const msPerWeek = 7 * 24 * 60 * 60 * 1000
-    const weeksSinceFirst = Math.floor((currentDate.getTime() - firstMeeting.getTime()) / msPerWeek)
-    
-    // Find next bi-weekly meeting (every 2 weeks)
-    const nextMeetingWeeks = Math.ceil(weeksSinceFirst / 2) * 2
-    const nextMeetingDate = new Date(firstMeeting.getTime() + (nextMeetingWeeks * msPerWeek))
-    
-    // If the calculated date is in the past or today, move to next bi-weekly meeting
-    if (nextMeetingDate <= currentDate) {
-        nextMeetingDate.setDate(nextMeetingDate.getDate() + 14)
+
+    const nextMeeting = new Date(firstMeeting)
+
+    while (nextMeeting <= currentDate) {
+        nextMeeting.setDate(nextMeeting.getDate() + 7)
     }
-    
-    return nextMeetingDate.toLocaleDateString()
+
+    return nextMeeting
 }
 
-const nextMeetingDate = getNextBiWeeklyMeeting()
+const nextMeetingDate = getNextWeeklyMeeting()
+const nextMeetingDateLabel = nextMeetingDate.toLocaleDateString()
 const nextMeetingDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][INFOHUB_MEETING_DAY]
 
-const meetingTimeFormattedHour = new Date(nextMeetingDate + ' ' + INFOHUB_MEETING_HOUR).toLocaleTimeString('en', { hour: '2-digit', minute:'2-digit' })
+const meetingTimeFormattedHour = nextMeetingDate.toLocaleTimeString('en', { hour: 'numeric', minute: '2-digit' })
 
 export function InfoHub(): React.ReactNode {
     return (
@@ -63,15 +61,15 @@ export function InfoHub(): React.ReactNode {
                     <div>
                         <h2 className='title-main text-neutral-400 font-semibold'>⏰ WHEN</h2>
                         <h2 className='title-main text-3xl font-semibold pr-0 md:pr-16'>
-                            Bi-Weekly, <span className='text-[#FCD690] font-bold'>{nextMeetingDay}s</span> at <span className='text-blue-200 font-bold'>{meetingTimeFormattedHour}</span>
+                            Weekly, <span className='text-[#FCD690] font-bold'>{nextMeetingDay}s</span> at <span className='text-blue-200 font-bold'>{meetingTimeFormattedHour}</span>
                         </h2>
                         <div className='text-neutral-400 text-sm italic'>
                             (Subject to change)
                         </div>
                         <div className='text-neutral-300'>
-                            Next meeting will be on <span className='underline underline-offset-2'>{nextMeetingDate}</span> which is in:
+                            Next meeting will be on <span className='underline underline-offset-2'>{nextMeetingDateLabel}</span> which is in:
                         </div>
-                        <Countdown timestamp={new Date(`${nextMeetingDate} ${INFOHUB_MEETING_HOUR}`).getTime()} className='my-4'/>
+                        <Countdown timestamp={nextMeetingDate.getTime()} className='my-4'/>
                     </div>
 
                     <div>
@@ -85,7 +83,7 @@ export function InfoHub(): React.ReactNode {
                             You can also tune-in remotely on our{' '}
                             <Link href='https://discord.gg/tDtqmP5sGt' target='_blank' className='text-purple-400 font-semibold'>Discord</Link> Stage.
                         </div>
-                        <Link href='https://calendar.google.com/calendar/render?action=TEMPLATE&text=%F0%9F%A4%96+AI+Club+Meeting!+%F0%9F%A4%96&dates=20250917T180000/20250917T200000&ctz=America/Los_Angeles&location=Location+TBA&details=Bi-weekly%20AI%20Club%20meeting.%20All%20are%20welcome!%20To%20see%20the%20agenda%20for%20our%20meeting%2C%20please%20see%20the%20discord%20%23announcements%20channel!%20https%3A%2F%2Fdiscord.gg%2FPH7KxjPz24&recur=RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=WE' target='_blank'>
+                        <Link href='https://calendar.google.com/calendar/render?action=TEMPLATE&text=%F0%9F%A4%96+AI+Club+Meeting!+%F0%9F%A4%96&dates=20251006T180000/20251006T190000&ctz=America/Los_Angeles&location=Makerspace+(LIB+260)%2C+SFSU&details=Weekly%20AI%20Club%20meeting.%20All%20are%20welcome!%20Check%20the%20Discord%20%23announcements%20channel%20for%20agendas.%20https%3A%2F%2Fdiscord.gg%2FPH7KxjPz24&recur=RRULE:FREQ=WEEKLY;BYDAY=MO' target='_blank'>
                             <p className='w-52 hover:w-56 transition-all p-2 my-2 text-sm text-center font-semibold hover:animate-pulse bg-yellow-900 rounded-lg'>🔔 Sign up for reminders!</p>
                         </Link>
                     </div>
