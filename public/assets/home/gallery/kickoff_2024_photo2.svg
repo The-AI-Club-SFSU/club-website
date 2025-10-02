@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Kickoff conversations illustration</title>
+  <desc id="desc">Abstract illustration of members connecting before the kickoff meeting.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2027" />
+      <stop offset="45%" stop-color="#203A43" />
+      <stop offset="100%" stop-color="#2C5364" />
+    </linearGradient>
+    <linearGradient id="wave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#63D6FF" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#C58CFF" stop-opacity="0.85" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg2)" rx="48" />
+  <path d="M0 520 C200 420, 420 580, 620 500 C820 420, 1000 560, 1200 460 V800 H0 Z" fill="url(#wave)" opacity="0.65" />
+  <g fill="#FFFFFF" opacity="0.8">
+    <circle cx="360" cy="370" r="120" />
+    <circle cx="520" cy="340" r="90" />
+    <circle cx="700" cy="380" r="110" />
+    <circle cx="860" cy="350" r="80" />
+  </g>
+  <g fill="none" stroke="#63D6FF" stroke-width="6" stroke-linecap="round" opacity="0.8">
+    <path d="M360 370 Q440 300 520 340" />
+    <path d="M520 340 Q620 420 700 380" />
+    <path d="M700 380 Q780 300 860 350" />
+  </g>
+  <g fill="#F8FBFF">
+    <text x="150" y="610" font-size="56" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700">Kickoff Connections</text>
+    <text x="150" y="670" font-size="32" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="500" fill-opacity="0.85">Members gathering, greeting, and getting ready to collaborate.</text>
+  </g>
+</svg>

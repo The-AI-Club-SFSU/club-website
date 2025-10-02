@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Fall 2024 Kickoff welcome graphic</title>
+  <desc id="desc">Stylized illustration representing the AI Club Fall 2024 kickoff in the Makerspace.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B1F3B" />
+      <stop offset="50%" stop-color="#5036A3" />
+      <stop offset="100%" stop-color="#FF7A99" />
+    </linearGradient>
+    <radialGradient id="glow" cx="60%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFE29A" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#FFE29A" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" rx="48" />
+  <circle cx="780" cy="320" r="320" fill="url(#glow)" />
+  <g fill="none" stroke="#FFFFFF" stroke-opacity="0.35">
+    <rect x="160" y="200" width="880" height="420" rx="36" stroke-width="4" />
+    <rect x="200" y="240" width="800" height="340" rx="28" stroke-width="2" />
+    <path d="M220 520 h760" stroke-width="2" stroke-dasharray="12 18" />
+  </g>
+  <g fill="#FFFFFF">
+    <text x="200" y="310" font-size="64" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700" letter-spacing="4">FALL 2024 KICKOFF</text>
+    <text x="200" y="390" font-size="48" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="600">Welcome to the Makerspace</text>
+    <text x="200" y="470" font-size="28" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="500" fill-opacity="0.9">New faces, collaborative energy, and community projects take flight.</text>
+  </g>
+  <g fill="#FFE29A" opacity="0.9">
+    <circle cx="1020" cy="180" r="14" />
+    <circle cx="1048" cy="220" r="10" />
+    <circle cx="980" cy="210" r="8" />
+    <circle cx="940" cy="170" r="6" />
+  </g>
+  <g fill="#8CF4FF" opacity="0.7">
+    <circle cx="320" cy="600" r="14" />
+    <circle cx="360" cy="640" r="10" />
+    <circle cx="280" cy="640" r="6" />
+    <circle cx="260" cy="590" r="8" />
+  </g>
+</svg>

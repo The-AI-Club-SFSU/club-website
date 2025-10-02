@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Kickoff candid smiles illustration</title>
+  <desc id="desc">Playful illustration showing candid smiles from the kickoff event.</desc>
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C061F" />
+      <stop offset="50%" stop-color="#6F2232" />
+      <stop offset="100%" stop-color="#C3073F" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg5)" rx="48" />
+  <g fill="#FFE8A3" opacity="0.85">
+    <circle cx="360" cy="360" r="120" />
+    <circle cx="520" cy="320" r="80" />
+    <circle cx="720" cy="360" r="120" />
+    <circle cx="900" cy="340" r="90" />
+  </g>
+  <g fill="none" stroke="#2C061F" stroke-width="10" stroke-linecap="round" opacity="0.9">
+    <path d="M320 360 q40 80 80 0" />
+    <path d="M680 360 q40 80 80 0" />
+    <path d="M880 340 q30 60 60 0" />
+  </g>
+  <g fill="#FFFFFF">
+    <text x="160" y="620" font-size="58" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="700">Kickoff Candid</text>
+    <text x="160" y="680" font-size="32" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="500" fill-opacity="0.85">Smiles from our first meeting of the season.</text>
+  </g>
+</svg>

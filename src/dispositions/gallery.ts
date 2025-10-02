@@ -16,6 +16,30 @@ interface GalleryPiece {
 
 export const HomeAlbum: GalleryPiece[] = [
     {
+        remark: '🎉 Fall 2024 Kickoff Meeting – Welcome to the Makerspace',
+        imgSrc: DIR_HOME_GALLERY + 'kickoff_2024_photo1.svg',
+    },
+    {
+        remark: '🤝 Kickoff Connections – Members settling in before the meeting',
+        imgSrc: DIR_HOME_GALLERY + 'kickoff_2024_photo2.svg',
+    },
+    {
+        remark: '🧠 Workshop Energy – Brainstorming during our kickoff activities',
+        imgSrc: DIR_HOME_GALLERY + 'kickoff_2024_photo3.svg',
+    },
+    {
+        remark: '🙌 Makerspace Vibes – Collaborating around the work tables',
+        imgSrc: DIR_HOME_GALLERY + 'kickoff_2024_photo4.svg',
+    },
+    {
+        remark: '📸 Kickoff Candid – Smiles from our first meeting of the season',
+        imgSrc: DIR_HOME_GALLERY + 'kickoff_2024_photo5.svg',
+    },
+    {
+        remark: '🚀 Ready for Launch – Club officers gearing up for the weekly series',
+        imgSrc: DIR_HOME_GALLERY + 'kickoff_2024_photo6.svg',
+    },
+    {
         remark: '🌄 "Expand Your Horizons 2022"\nTinkerCAD 3D Design Printing',
         imgSrc: DIR_HOME_GALLERY + 'expand_print_closeup.jpg',
     },
