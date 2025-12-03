@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-midnight-950 text-white antialiased;
+    background-image: 
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 110, 241, 0.15), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(168, 85, 247, 0.1), transparent),
+      radial-gradient(ellipse 40% 30% at 0% 80%, rgba(0, 245, 255, 0.08), transparent);
+    background-attachment: fixed;
+  }
+  
+  ::selection {
+    @apply bg-neon-cyan/30 text-white;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-neon-cyan via-neon-purple to-neon-pink bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-subtle {
+    @apply bg-gradient-to-r from-white via-white to-white/70 bg-clip-text text-transparent;
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 20px rgba(0, 245, 255, 0.5), 0 0 40px rgba(0, 245, 255, 0.3);
+  }
+  
+  .glow-box {
+    box-shadow: 0 0 30px rgba(0, 245, 255, 0.2), inset 0 0 30px rgba(0, 245, 255, 0.05);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 15, 26, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 110, 241, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 110, 241, 0.7);
+}
+
+/* Grid pattern background utility */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(99, 110, 241, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 110, 241, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
