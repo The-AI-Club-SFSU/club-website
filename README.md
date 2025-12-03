@@ -24,4 +24,3 @@ If the photos are in HEIC format, you may use `/scripts/convert_heic_to_webp.py`
 ## License
 
 MIT License - feel free to use for your own club website!
-
